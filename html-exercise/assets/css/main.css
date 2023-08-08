@@ -1,99 +1,22 @@
-/* header */
-.header {
-  padding: 32px 10%;
-  justify-content: space-between;
-  align-items: center;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1;
+.txt-yellow {
+  color: #FBB03B
 }
 
-.nav-main {
-  width: 40%;
-}
-
-.nav-list {
-  justify-content: space-between;
-  font-size: 18px;
-}
-
-.action-list {
-  width: 12%;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.icon-search {
-  background-image: url('../images/ic-search.svg');
-}
-
-.icon-cart {
-  background-image: url('../images/ic-cart.svg');
-}
-
-.icon-profile {
-  background-image: url('../images/ic-avatar.svg');
-}
-
-.main {
-
-}
-
-.section {
-  width: 100%;
-  padding: 2% 10%;
-  margin: 2% 0;
-  min-height: 240px;
-}
-
-.section:first-child
-.section-header {
-  margin: 20px 0;
-}
-
-section .section-title {
-  font-size: 32px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.btn {
-  background-color: #FFF;
-  padding: 12px 18px;
-  border-radius: 24px;
-  font-size: 13px;
-}
-
-.discount{
-  padding: 10px 20px;
-  position: absolute;
-  background-color: #FF0000;
-  color: #FFF;
-  border-radius: 20px;
-  font-size: 12px;
-}
 /* banner */
 .section-banner {
   width: 100%;
   height: 800px;
-  margin-top: 0;
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/header-bg.png");
   background-size: cover;
 }
 
 .section-banner .section-header {
-  padding: 20% 0 20% 5%
-}
-
-.section-banner .section-header .section-title{
-  text-align: start;
+  padding: 15% 8%
 }
 
 .section-banner .section-title {
+  text-align: start;
   margin-bottom: 12px;
   color: #FFF;
   font-size: 72px;
@@ -101,7 +24,7 @@ section .section-title {
   line-height: 101.5%;
 }
 
-.section-banner .section-title .yellow {
+.section-banner .section-title .txt-yellow {
   display: block;
 }
 
@@ -113,14 +36,7 @@ section .section-title {
   text-align: start;
 }
 
-.icon-arrow {
-  width: 36px;
-  height: 36px;
-  margin: 12px 12px -10px 0;
-  background-image: url('../images/ic-arrow.svg');
-  border-radius: 50%;
-}
-
+/* note */
 .banner-note {
   width: 80%;
   position: absolute;
@@ -130,10 +46,9 @@ section .section-title {
 
   background-color: #FFF;
   border-radius: 0 100px 0 0;
-
 }
 
-.note-list {
+.banner-note .note-list {
   justify-content: space-around;
 }
 
@@ -144,55 +59,65 @@ section .section-title {
 .note {
   justify-content: space-evenly;
 }
-
-.icon-note {
+.note .note-icon {
   width: 36px;
   height: 36px;
 }
-.icon-note-freeship {
-  background-image: url('../images/ic-freeship-fill.svg');
-}
-
-.icon-note-satisfied {
-  background-image: url('../images/ic-satisfied-fill.svg');
-}
-
-.icon-note-guaranteed {
-  background-image: url('../images/ic-guaranteed-fill.svg');
-}
-
-.note-content {
+.note .note-content {
   width: 200px;
 }
 
-.note-title {
+.note .note-title {
   font-size: 14px;
   font-weight: bolder;
 }
 
-.note-desc {
+.note .note-desc {
   font-size: 12px;
   color: #A8A8A8
 }
 
+/* discount */
+.discount{
+  padding: 10px 20px;
+  position: absolute;
+  background-color: #FF0000;
+  color: #FFF;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
 /* highlight */
-.highlight-list {
+.section-highlight .highlight-list {
   height: 360px;
 }
-.highlight-item {
+.highlight-list .highlight-item {
   width: 22%;
   position: relative;
   margin: 0 10px;
   height: 100%;
 }
 
-.highlight-item-1 {
+.highlight-list .highlight-item:first-child {
   width: 55%;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-1.png");
   margin-left: -10px
 }
 
-.highlight-title {
+.highlight-list .highlight-item {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-2.png");
+}
+
+.highlight-list .highlight-item:last-child {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-3.png");
+  margin-right: -10px
+}
+
+.highlight-list .highlight-item:last-child .highlight-title {
+  max-width: min-content;
+}
+
+.highlight .highlight-title {
   position: absolute;
   top: 50%;
   left: 10%;
@@ -202,22 +127,13 @@ section .section-title {
   font-weight: 400;
 }
 
-.highlight-link {
-  top: 70%;
+.highlight .highlight-link {
+  top: 75%;
   left: 10%;
   position: absolute;
 }
 
-.highlight-item-2 {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-2.png");
-}
-
-.highlight-item-3{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-3.png");
-  margin-right: -10px
-}
-
-.highlight-item .discount {
+.highlight .discount {
   top: 35%;
   left: 10%
 }
@@ -227,13 +143,13 @@ section .section-title {
   justify-content: space-between;
 }
 
-.btn-recommend {
+.section-recommend .btn-recommend {
   border: 1px solid #C4C4C4;
   font-weight: 700;
   padding: 12px 20px
 }
 
-
+/* products */
 .product-list {
   margin-top: 18px;
   justify-content: space-between;
@@ -267,67 +183,42 @@ section .section-title {
   float: right;
 }
 
-/* Information */
+/* information */
 .section-info {
   background-color: #F6F6F6;
 }
 
-.info-list {
+.section-info .info-list {
   justify-content: space-evenly;
 }
 
-.info {
+.info-item .info {
   width: 245px;
 }
 
-.icon-info {
-  width: 70px;
-  height: 70px;
-  margin: 20px 0;
-}
-.icon-freeship {
-  background: url('../images/ic-freeship.svg') no-repeat;
-}
-
-.icon-payment {
-  background: url('../images/ic-payment.svg') no-repeat;
-}
-
-.icon-guaranteed {
-  background: url('../images/ic-guaranteed.svg') no-repeat;
-  background-size: cover;
-}
-
-.icon-quality {
-  background: url('../images/ic-quality.svg') no-repeat;
-  background-size: cover;
-}
-
-.info-title {
+.info .info-title {
   font-size: 16px;
   font-weight: bolder;
   margin: 10px 0
 }
 
-.info-desc {
+.info .info-desc {
   color: #808080
 }
 
+/* subscribe */
 .section-subscribe {
   position: relative;
   background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url("../images/subscribe-bg.png");
 }
 
-.subscribe-form {
+.section-subscribe .subscribe-form {
   position: absolute;
 }
 
-.subscribe-content {
+.subscribe-form .subscribe-content {
   display: inline-block;
   width: 500px;
   color: #FFF;
   font-size: 24px;
-}
-.footer {
-  
 }
