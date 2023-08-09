@@ -28,7 +28,10 @@
   color: var(--discount-price-color)
 }
 
+.product .price-wrapper {
+  justify-content: space-between;
+}
+
 .product-price-discount + .product-price {
   color: var(--original-price-color);
-  float: right;
 }
