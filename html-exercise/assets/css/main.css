@@ -12,7 +12,7 @@
   top: 25%;
   left: 0;
   margin: 0;
-  padding-left: calc(var(--container-side));
+  padding-left: calc(var(--container-side) + 72px + 24px);
 }
 
 .section-banner .section-title {
@@ -43,7 +43,7 @@
   bottom: 0;
   left: 0;
   padding: 38px 64px;
-  padding-left: calc(var(--container-side) - 24px);
+  padding-left: calc(var(--container-side) + 72px);
 
   background-color: var(--light-color);
   border-radius: 0 100px 0 0;
@@ -86,7 +86,7 @@
 }
 
 .section-highlight .highlight-list {
-  height: 360px;
+  min-height: 360px;
 }
 .highlight-list .highlight-item {
   display: inline-block;
@@ -95,32 +95,30 @@
 
 .highlight-item .highlight{
   height: 100%;
+  fill: #333;
+  /* opacity: 0.2; */
 }
 
 .highlight-list .highlight-item:first-child .highlight {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-1.png") no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/highlight-1.png") no-repeat;
   background-size: cover;
 }
 
 .highlight-list .highlight-item:nth-child(2)  .highlight{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-2.png") no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/highlight-2.png") no-repeat;
   background-size: cover;
 }
 
 .highlight-list .highlight-item:last-child  .highlight{
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-3.png") no-repeat;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/highlight-3.png") no-repeat;
   background-size: cover;
-}
-
-.highlight-list .highlight-item:last-child .highlight-title {
-  max-width: min-content;
 }
 
 .highlight .highlight-title {
   position: absolute;
   top: 50%;
   left: 10%;
-
+  max-width: 60%;
   font-size: 24px;
   color: var(--light-color);
   font-weight: 400;
@@ -155,10 +153,6 @@
 .section-info .info-list {
   padding-top: 50px;
   justify-content: space-between;
-}
-
-.info-item .info {
-  width: 245px;
 }
 
 .info .info-title {

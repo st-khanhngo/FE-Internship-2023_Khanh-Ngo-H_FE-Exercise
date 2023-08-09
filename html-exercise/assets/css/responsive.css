@@ -10,6 +10,10 @@
   .section .section-title {
     font-size: 18px;
   }
+
+  .section .section-header {
+    margin-bottom: 0;
+  }
   .btn {
     font-size: 10px;
     padding: 3px 10px;
@@ -17,7 +21,7 @@
 
   .discount {
     font-size: 8px;
-    padding: 2px;
+    padding: 2px 4px;
   }
 
   .header {
@@ -64,18 +68,126 @@
     display: none;
   }
 
+  .highlight-list {
+    height: fit-content;
+  }
+  
+  .highlight-list .highlight-item {
+    margin-bottom: 8px;
+  }
   .highlight-item .highlight {
-    max-height: 225px;
-    margin: 4px;
+    min-height: 225px;
   }
 
   .highlight .highlight-title {
     font-size: 14px;
     max-width: 125px;
+    top: 65%;
+    width: 120px;
   }
 
   .highlight .highlight-link {
-    top: 80%;
-    left: 10%
+    top: 85%;
+    left: 8%;
   }
+
+  .highlight .discount {
+    top: 55%
+  }
+
+  .section-recommend .section-header {
+    margin: 0;
+    align-items: center;
+  }
+
+  .btn-recommend {
+    border: none !important;
+    height: fit-content;
+  }
+
+  .section-product .section-title {
+    text-align: start;
+  }
+  .product-item {
+    margin-bottom: 8px; 
+  }
+  .product .product-title {
+    font-size: 12px;
+  }
+
+  .product .product-price,
+  .product .product-price-discount {
+    font-size: 10px;
+  }
+
+  .section-info .info-list {
+    padding-top: 40px !important;
+  }
+
+  .info.row {
+    margin-bottom: 16px;
+  }
+
+  .info .info-title {
+    margin: 8px 0;
+    font-size: 12px;
+  }
+
+  .info .icon-info,
+  .info .icon-overlay {
+    max-width: 68px;
+    margin-right: 16px
+  }
+
+  .info .info-desc {
+    font-size: 10px;
+  }
+
+  /* subscribe */
+  .section-subscribe {
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url("../images/subscribe-bg-mb.png") no-repeat;
+    background-size: cover;
+    max-height: 200px;
+  }
+
+  .section-subscribe .subscribe-form {
+    padding-top: 20px;
+    height: auto;
+  }
+
+  .subscribe-form .subscribe-content {
+    font-size: 14px;
+    max-width: 200px;
+  }
+
+  .subscribe-form .subscribe-input {
+    margin: 24px 0 16px;
+    padding: 6px 12px !important;
+  }
+
+  .subscribe-form .btn-subscribe {
+    padding: 7px 18px
+  }
+  .footer .footer-content {
+    padding: 24px 0;
+  }
+  
+  .footer .footer-detail-desc{
+    max-width: 100%;
+    margin-bottom: 48px;
+  }
+  
+  .footer .social-list {
+    display: none;
+  }
+  
+  .footer-nav .footer-nav-col {
+    margin-bottom: 24px;
+  }
+  
+  .footer-nav-col .footer-nav-item,
+  .footer-end .copyright {
+    font-size: 12px;
+  }
+
 }
