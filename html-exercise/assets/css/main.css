@@ -65,6 +65,7 @@
   width: 36px;
   height: 36px;
 }
+
 .note .note-content {
   width: 200px;
   padding-left: 21px; 
@@ -95,8 +96,6 @@
 
 .highlight-item .highlight{
   height: 100%;
-  fill: #333;
-  /* opacity: 0.2; */
 }
 
 .highlight-list .highlight-item:first-child .highlight {
@@ -153,6 +152,11 @@
 .section-info .info-list {
   padding-top: 50px;
   justify-content: space-between;
+}
+
+.info .icon-overlay,
+.info > .icon-info {
+  margin-left: 10px;
 }
 
 .info .info-title {

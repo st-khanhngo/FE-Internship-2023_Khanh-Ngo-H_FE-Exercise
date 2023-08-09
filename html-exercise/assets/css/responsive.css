@@ -136,6 +136,7 @@
   .info .icon-info,
   .info .icon-overlay {
     max-width: 68px;
+    margin-left: 0;
     margin-right: 16px
   }
 

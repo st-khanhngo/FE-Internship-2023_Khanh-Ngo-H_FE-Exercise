@@ -7,10 +7,11 @@
 }
 
 .icon-overlay {
-  background-color: var(--light-color);
   width: 70px;
   height: 70px;
   position: relative;
+  background-color: var(--light-color);
+  border-radius: 8px;
 }
 
 .icon-search {

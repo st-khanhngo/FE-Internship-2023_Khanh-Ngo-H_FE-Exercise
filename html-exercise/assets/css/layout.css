@@ -76,19 +76,19 @@
     padding: 0 4px !important;
   }
 
-  .col.col-xs-3 {
+  .col-xs-3 {
     width: 25% !important;
   }
 
-  .col.col-xs-6 {
+  .col-xs-6 {
     width: 50% !important; 
   }
 
-  .col.col-xs-9 {
+  .col-xs-9 {
     width: 75% !important;
   }
   
-  .col.col-xs-12 {
+  .col-xs-12 {
     width: 100% !important;
   }
 }
