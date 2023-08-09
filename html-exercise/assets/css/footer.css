@@ -8,16 +8,16 @@
 }
 
 .footer-detail .footer-detail-desc {
-  margin: 5% 0;
+  margin: 24px 0 40px;
   max-width: 80%;
 }
 
 .footer-detail .social-list {
-  margin-top: 20%
+  margin: 40px 0 0 -8px;
 }
 
 .social-list .social-item {
-  margin: -50px 8px;
+  margin: 0 8px;
 }
 
 .footer-nav .footer-nav-column {
