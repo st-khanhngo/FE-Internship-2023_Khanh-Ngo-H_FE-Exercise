@@ -1,0 +1,31 @@
+.product-list {
+  margin-top: 18px;
+}
+
+.product-discount{
+  position: relative;
+}
+
+.product-title {
+  margin-top: 8px;
+  font-weight: 300;
+}
+
+.product-discount .discount{
+  top: 5%;
+  left: 5%
+}
+
+.product .product-price {
+  font-size: 20px
+}
+
+.product-price-discount {
+  font-size: 20px;
+  color: var(--discount-price-color)
+}
+
+.product-price-discount + .product-price {
+  color: var(--original-price-color);
+  float: right;
+}
