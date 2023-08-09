@@ -1,5 +1,8 @@
+.section-product {
+  padding: 48px 60px;
+}
 .product-list {
-  margin-top: 18px;
+  padding-top: 18px;
 }
 
 .product-discount{
@@ -13,11 +16,11 @@
 
 .product-discount .discount{
   top: 5%;
-  left: 5%
+  left: 5%;
 }
 
 .product .product-price {
-  font-size: 20px
+  font-size: 20px;
 }
 
 .product-price-discount {

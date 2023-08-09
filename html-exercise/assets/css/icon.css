@@ -6,6 +6,13 @@
   vertical-align: middle;
 }
 
+.icon-overlay {
+  background-color: var(--light-color);
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+
 .icon-search {
   background-image: url('../images/ic-search.svg');
 }
@@ -29,14 +36,25 @@
 .icon-info {
   width: 70px;
   height: 70px;
-  margin: 20px 0;
-}
-.icon-freeship {
-  background: url('../images/ic-freeship.svg') no-repeat;
 }
 
-.icon-payment {
+.icon-overlay .icon-freeship {
+  background: url('../images/ic-freeship.svg') no-repeat;
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon-overlay .icon-payment {
   background: url('../images/ic-payment.svg') no-repeat;
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .icon-guaranteed {

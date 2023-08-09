@@ -12,17 +12,19 @@
   align-items: center;
 }
 
-.header .nav-main {
-  width: 40%;
-}
-
 .nav-main .nav-list {
   justify-content: space-between;
   font-size: 18px;
 }
+.nav-list .nav-item {
+  padding: 0 48px;
+}
 
 .header .action-list {
-  width: 12%;
   justify-content: space-around;
   align-items: center;
+}
+
+.action-list .action-item {
+  padding: 0 12px;
 }

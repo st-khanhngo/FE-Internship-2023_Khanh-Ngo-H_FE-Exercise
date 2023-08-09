@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="assets/css/section.css">
   <link rel="stylesheet" href="assets/css/icon.css">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/product.css">
   <link rel="stylesheet" href="assets/css/button.css">
   <link rel="stylesheet" href="assets/css/footer.css">
 </head>
@@ -33,13 +34,13 @@
       <nav class="nav-main">
         <ul class="nav-list flex">
           <li class="nav-item">
-            <a class="nav-link txt-yellow" href="">Men</a>
+            <a class="nav-link txt-primary" href="">Men</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link txt-yellow" href="">Woman</a>
+            <a class="nav-link txt-primary" href="">Woman</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link txt-yellow" href="">Kids</a>
+            <a class="nav-link txt-primary" href="">Kids</a>
           </li>
         </ul>
       </nav>
@@ -70,7 +71,7 @@
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Sale of the
-            <span class="txt-yellow">summer</span>
+            <span class="txt-primary">summer</span>
             collection
           </h2>
           <a class="section-link" href="">
@@ -199,15 +200,16 @@
         <ul class="info-list flex">
           <li class="info-item">
             <div class="info">
-              <i class="icon icon-info icon-freeship"></i>
+              <div class="icon-overlay"> <i class="icon icon-freeship"></i>
+              </div>
               <h4 class="info-title">Free Shipping</h4>
               <p class="info-desc">All purchases over $199 are eligible forfree shipping via USPS First Class Mail.</p>
             </div>
           </li>
           <li class="info-item">
             <div class="info info-highlight">
-              <i class="icon icon-info icon-payment"></i>
-              <h4 class="info-title txt-yellow">Easy Payments</h4>
+              <div class="icon-overlay"><i class="icon icon-info icon-payment"></i></div>
+              <h4 class="info-title txt-primary">Easy Payments</h4>
               <p class="info-desc">All payments are processed instantlyover a secure payment protocol.</p>
             </div>
           </li>
@@ -237,7 +239,7 @@
           <h3 class="section-title">Products in today</h3>
         </div>
         <ul class="product-list row">
-          <li class="product-item col col-3 col col-3">
+          <li class="product-item col col-3">
             <div class="product product-discount">
               <a class="product-link" href="">
                 <span class="discount">-50%</span>
@@ -282,12 +284,14 @@
     <!-- Subscribe -->
     <section class="section section-subscribe">
       <div class="container">
-        <form action="" class="subscribe-form flex">
-          <label class="subscribe-content" for="email">Subscribe to our newsletter
+        <form action="" class="subscribe-form row">
+          <label class="subscribe-content col col-6" for="email">Subscribe to our newsletter
             and receive exclusive offers every
             week</label>
-          <input class="subscribe-input" type="email" name="email" id="email" placeholder="Enter your email">
-          <button class="btn btn-subscribe" type="submit">SUBSCRIBE</button>
+          <div class="col col-6">
+            <input class="subscribe-input" type="email" name="email" id="email" placeholder="Enter your email">
+            <button class="btn btn-subscribe" type="submit">SUBSCRIBE</button>
+          </div>
         </form>
       </div>
     </section>
@@ -296,8 +300,8 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <div class="footer-content flex">
-        <div class="footer-detail">
+      <div class="footer-content row">
+        <div class="footer-detail col col-6">
           <img class="img img-logo" src="assets/images/shop-logo.png" alt="Logo">
           <p class="footer-detail-desc">House My Brand designs clothing for the young, the old &everyone in between –
             but most importantly, for the fashionable</p>
@@ -331,8 +335,8 @@
           </ul>
         </div>
         <!-- Footer nav -->
-        <ul class="footer-nav flex">
-          <li class="footer-nav-col">
+        <ul class="footer-nav col col-6 row">
+          <li class="footer-nav-col col col-4">
             <p class="footer-nav-title">Shopping online</p>
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
@@ -352,7 +356,7 @@
               </li>
             </ul>
           </li>
-          <li class="footer-nav-col">
+          <li class="footer-nav-col col col-4">
             <p class="footer-nav-title">Information</p>
             <ul class="footer-nav-list">
               <li class="footer-nav-item">
@@ -372,7 +376,7 @@
               </li>
             </ul>
           </li>
-          <li class="footer-nav-col">
+          <li class="footer-nav-co col col-4l">
             <p class="footer-nav-title">Contact</p>
             <ul class="footer-nav-list">
               <li class="footer-nav-item">

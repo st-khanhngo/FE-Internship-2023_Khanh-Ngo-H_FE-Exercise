@@ -1,15 +1,18 @@
 /* banner */
 .section-banner {
   width: 100%;
-  height: 800px;
+  height: 100vh;
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/header-bg.png");
   background-size: cover;
 }
 
 .section-banner .section-header {
-  padding: 20% 0;
+  position: absolute;
+  top: 25%;
+  left: 0;
   margin: 0;
+  padding-left: calc(var(--container-side));
 }
 
 .section-banner .section-title {
@@ -18,9 +21,10 @@
   font-size: 72px;
   font-weight: 700;
   line-height: 101.5%;
+  padding-bottom: 24px;
 }
 
-.section-banner .section-title .txt-yellow {
+.section-banner .section-title .txt-primary {
   display: block;
 }
 
@@ -38,7 +42,8 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 3% 3% 3% 15%;
+  padding: 38px 64px;
+  padding-left: calc(var(--container-side) - 24px);
 
   background-color: var(--light-color);
   border-radius: 0 100px 0 0;
@@ -46,14 +51,18 @@
 
 .banner-note .note-list {
   justify-content: space-between;
+  padding: 0 24px;
+  height: auto;
+  align-items: baseline;
+
 }
 
 .note-item {
   width: 300px;
 }
 
-.note {
-  justify-content: space-evenly;
+.note{
+  padding: 
 }
 .note .note-icon {
   width: 36px;
@@ -61,6 +70,7 @@
 }
 .note .note-content {
   width: 200px;
+  padding-left: 21px; 
 }
 
 .note .note-title {
@@ -80,23 +90,22 @@
 .highlight-list .highlight-item {
   display: inline-block;
   position: relative;
+}
+
+.highlight-item .highlight{
   height: 100%;
 }
 
-.highlight-list .highlight-item:first-child {
+.highlight-list .highlight-item:first-child .highlight {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-1.png");
-  margin: 0;
 }
 
-.highlight-list .highlight-item {
+.highlight-list .highlight-item:nth-child(2)  .highlight{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-2.png");
-  background-size: cover;
-  margin-left: 20px
 }
 
-.highlight-list .highlight-item:last-child {
+.highlight-list .highlight-item:last-child  .highlight{
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/highlight-3.png");
-  /* margin-left: 10px; */
 }
 
 .highlight-list .highlight-item:last-child .highlight-title {
@@ -123,20 +132,24 @@
   top: 35%;
   left: 10%
 }
-
 /* Recommend */
-.section-recommend .section-header{
-  justify-content: space-between;
+.section-recommend {
+  padding: 50px 0;
 }
 
-
+.section-recommend .section-header{
+  justify-content: space-between;
+  margin: 40px 0; 
+}
 
 /* information */
 .section-info {
   background-color: var(--gray-bg-color);
+  padding: 48px 0 54px;
 }
 
 .section-info .info-list {
+  padding-top: 50px;
   justify-content: space-between;
 }
 
@@ -147,7 +160,7 @@
 .info .info-title {
   font-size: 16px;
   font-weight: bolder;
-  margin: 10px 0
+  margin: 46px 0 16px;
 }
 
 .info .info-desc {
@@ -156,7 +169,6 @@
 
 /* subscribe */
 .section-subscribe {
-  position: relative;
   background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url("../images/subscribe-bg.png");
 }
 
@@ -175,7 +187,8 @@
 }
 
 .subscribe-form .subscribe-input {
-  width: 30%;
+  width: 60%;
+  margin-left: 40px;
   padding: 16px 70px 16px 24px;
   border-radius: 50px;
 }
