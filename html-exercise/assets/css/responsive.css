@@ -1,0 +1,81 @@
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 24px 0;
+  }
+  .container {
+    max-width: var(--container-width-mb);
+    width: 100%;
+  }
+
+  .section .section-title {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 10px;
+    padding: 3px 10px;
+  }
+
+  .discount {
+    font-size: 8px;
+    padding: 2px;
+  }
+
+  .header {
+    background-color: var(--light-color);
+    padding: 20px 0;
+  }
+  .header .nav-main {
+    display: none;
+  }
+  [class$="-lg"] {
+    display: none;
+  }
+
+  [class$="-mb"] {
+    display: block;
+  }
+  .icon-cart-mb {
+    background: url('../images/ic-cart-mb.svg') no-repeat;
+  }
+
+  .icon-profile-mb {
+    background: url('../images/ic-profile-mb.svg') no-repeat;
+  }
+  .icon-menu-mb {
+    background: url('../images/ic-menu.svg') no-repeat;
+  }
+
+  .section-banner {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/header-bg-mb.png") no-repeat;
+    background-size: cover;
+  }
+
+  .section-banner .section-header {
+    width: var(--container-width-mb);
+    top: 40%;
+    padding: 0 24px;
+  }
+
+  .section-banner .section-header .section-title {
+    font-size: 48px;
+  }
+
+  .banner-note {
+    display: none;
+  }
+
+  .highlight-item .highlight {
+    max-height: 225px;
+    margin: 4px;
+  }
+
+  .highlight .highlight-title {
+    font-size: 14px;
+    max-width: 125px;
+  }
+
+  .highlight .highlight-link {
+    top: 80%;
+    left: 10%
+  }
+}
