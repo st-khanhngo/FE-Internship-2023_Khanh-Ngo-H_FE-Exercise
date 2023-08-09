@@ -66,3 +66,21 @@
 .col.col-12 {
   width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .row {
+    margin: 0 -4px;
+  }
+
+  .col {
+    padding: 0 4px !important;
+  }
+
+  .col.col-xs-6 {
+    width: 50% !important; 
+  }
+
+  .col.col-xs-12 {
+    width: 100% !important;
+  }
+}
