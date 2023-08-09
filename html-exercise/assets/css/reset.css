@@ -1,5 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
+  box-shadow: none;
+  border: none;
 }
 
 * {
@@ -27,5 +29,5 @@ ul {
 
 a {
   text-decoration: none;
-  color: #000
+  color: var(--dark-color)
 }

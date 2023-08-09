@@ -1,0 +1,12 @@
+.txt-yellow {
+  color: var(--primary-color)
+}
+
+.discount{
+  padding: 10px 20px;
+  position: absolute;
+  background-color: var(--discount-bg-color);
+  color: var(--light-color);
+  border-radius: 20px;
+  font-size: 12px;
+}

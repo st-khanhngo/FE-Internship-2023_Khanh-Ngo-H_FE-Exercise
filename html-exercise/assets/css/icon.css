@@ -3,7 +3,7 @@
   width: 24px;
   height: 24px;
   background: no-repeat center;
-  background-size: cover;
+  vertical-align: middle;
 }
 
 .icon-search {
@@ -21,7 +21,7 @@
 .icon-arrow {
   width: 36px;
   height: 36px;
-  margin: 12px 12px -10px 0;
+  margin-right: 12px;
   background-image: url('../images/ic-arrow.svg');
   border-radius: 50%;
 }
@@ -60,4 +60,24 @@
 
 .note .icon-guaranteed {
   background-image: url('../images/ic-guaranteed-fill.svg');
+}
+
+.icon-facebook {
+  background-image: url('../images/ic-fb.svg');
+}
+
+.icon-twitter {
+  background-image: url('../images/ic-twitter.svg');
+}
+
+.icon-linkedin {
+  background-image: url('../images/ic-linkedin.svg');
+}
+
+.icon-instagram {
+  background-image: url('../images/ic-insta.svg');
+}
+
+.icon-youtube {
+  background-image: url('../images/ic-youtube.svg');
 }
