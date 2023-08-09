@@ -1,14 +1,15 @@
 .header {
-  padding: 32px 10%;
-  justify-content: space-between;
-  align-items: center;
-  margin: 20px 0;
-
+  padding: 42px 0;
   position: absolute;
   top: 0;
   right: 0;
   left: 0;
   z-index: 1;
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header .nav-main {
