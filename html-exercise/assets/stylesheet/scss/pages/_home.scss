@@ -260,4 +260,45 @@
       top: 55%;
     }
   }
+
+  .section-recommend {
+    .section-header {
+      margin: 0;
+      align-items: center;
+    }
+    .btn-recommend {
+      height: fit-content;
+      border: none !important;
+    }
+  }
+
+  .section-product {
+    .section-title {
+      text-align: start;
+    }
+  }
+
+  .section-info {
+    .info-list {
+      padding-top: 40px !important;
+    }
+    .info {
+      &.row {
+        margin-bottom: 16px;
+      }
+      &-title {
+        margin: 8px 0;
+        font-size: 12px;
+      }
+      .icon-info,
+      .icon-overlay {
+        max-width: 68px;
+        margin-left: 0;
+        margin-right: 16px;
+      }
+      &-desc {
+        font-size: 10px;
+      }
+    }
+  }
 }

@@ -25,3 +25,30 @@
     }
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .section-subscribe {
+    max-height: 200px;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%),
+      url("../images/subscribe-bg-mb.png") no-repeat;
+    background-size: cover;
+
+    .subscribe-form {
+      height: auto;
+      padding-top: 20px;
+      .subscribe-content {
+        max-width: 200px;
+        font-size: 14px;
+      }
+
+      .subscribe-input {
+        margin: 24px 0 16px;
+        padding: 6px 12px !important;
+      }
+
+      .btn-subscribe {
+        padding: 7px 18px;
+      }
+    }
+  }
+}

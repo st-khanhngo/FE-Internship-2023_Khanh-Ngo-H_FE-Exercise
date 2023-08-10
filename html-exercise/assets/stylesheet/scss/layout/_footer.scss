@@ -45,3 +45,34 @@
     color: map-get($color, light);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    .footer-content {
+      padding: 24px 0;
+    }
+
+    .footer-detail-desc {
+      max-width: 100%;
+      margin-bottom: 48px;
+    }
+
+    .social-list {
+      display: none;
+    }
+    &-end {
+      .copyright {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .footer-nav {
+    &-col {
+      margin-bottom: 24px;
+    }
+    &-item {
+      font-size: 12px;
+    }
+  }
+}

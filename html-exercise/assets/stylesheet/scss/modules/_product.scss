@@ -37,3 +37,19 @@
     color: map-get($color, price);
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .product-item {
+    margin-bottom: 8px;
+    .product {
+      &-title {
+        font-size: 12px;
+      }
+
+      &-price,
+      &-price-discount {
+        font-size: 10px;
+      }
+    }
+  }
+}
