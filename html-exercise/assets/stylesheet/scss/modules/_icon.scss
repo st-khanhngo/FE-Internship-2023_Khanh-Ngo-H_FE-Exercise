@@ -1,0 +1,134 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: no-repeat center;
+  vertical-align: middle;
+
+  &.icon-search {
+    background-image: url("/html-exercise/assets/images/ic-search.svg");
+  }
+
+  &.icon-cart {
+    background-image: url("/html-exercise/assets/images/ic-cart.svg");
+  }
+
+  &.icon-profile {
+    background-image: url("/html-exercise/assets/images/ic-avatar.svg");
+  }
+
+  &.icon-arrow {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    background-image: url("/html-exercise/assets/images/ic-arrow.svg");
+    border-radius: 50%;
+  }
+
+  &.icon-info {
+    width: 70px;
+    height: 70px;
+  }
+
+  &.icon-guaranteed {
+    background: url("/html-exercise/assets/images/ic-guaranteed.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &.icon-quality {
+    background: url("/html-exercise/assets/images/ic-quality.svg") no-repeat;
+    background-size: cover;
+  }
+
+  &.icon-facebook {
+    background-image: url("/html-exercise/assets/images/ic-fb.svg");
+  }
+
+  &.icon-twitter {
+    background-image: url("/html-exercise/assets/images/ic-twitter.svg");
+  }
+
+  &.icon-linkedin {
+    background-image: url("/html-exercise/assets/images/ic-linkedin.svg");
+  }
+
+  &.icon-instagram {
+    background-image: url("/html-exercise/assets/images/ic-insta.svg");
+  }
+
+  &.icon-youtube {
+    background-image: url("/html-exercise/assets/images/ic-youtube.svg");
+  }
+}
+
+.icon-overlay {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  background-color: map-get($color, light);
+  border-radius: 8px;
+
+  .icon {
+    &-freeship {
+      position: absolute;
+      width: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      background: url("/html-exercise/assets/images/ic-freeship.svg") no-repeat;
+    }
+
+    &-payment {
+      position: absolute;
+      width: 50%;
+      height: 50%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+
+      background: url("/html-exercise/assets/images/ic-payment.svg") no-repeat;
+    }
+  }
+}
+
+.note {
+  .icon {
+    &-freeship {
+      background-image: url("/html-exercise/assets/images/ic-freeship-fill.svg");
+    }
+    &-satisfied {
+      background-image: url("/html-exercise/assets/images/ic-satisfied-fill.svg");
+    }
+    &-guaranteed {
+      background-image: url("/html-exercise/assets/images/ic-guaranteed-fill.svg");
+    }
+  }
+}
+
+[class$="-mb"] {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  [class$="-lg"] {
+    display: none;
+  }
+
+  [class$="-mb"] {
+    display: block;
+  }
+
+  .icon {
+    &-cart-mb {
+      background: url("/html-exercise/assets/images/ic-cart-mb.svg") no-repeat;
+    }
+
+    &-profile-mb {
+      background: url("/html-exercise/assets/images/ic-profile-mb.svg")
+        no-repeat;
+    }
+    &-menu-mb {
+      background: url("/html-exercise/assets/images/ic-menu.svg") no-repeat;
+    }
+  }
+}

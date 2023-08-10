@@ -1,0 +1,27 @@
+.section-subscribe {
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%),
+    url("/html-exercise/assets/images/subscribe-bg.png") no-repeat;
+  background-size: cover;
+  height: 240px;
+
+  .subscribe-form {
+    height: 240px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+
+    .subscribe-content {
+      width: 500px;
+      display: inline-block;
+      color: map-get($color, light);
+      font-size: 24px;
+    }
+
+    .subscribe-input {
+      width: 60%;
+      margin-right: 30px;
+      padding: 16px 70px 16px 24px;
+      border-radius: 50px;
+    }
+  }
+}
