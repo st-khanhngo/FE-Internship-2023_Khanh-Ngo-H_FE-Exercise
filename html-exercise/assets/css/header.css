@@ -16,8 +16,14 @@
   justify-content: space-between;
   font-size: 18px;
 }
+
 .nav-list .nav-item {
   padding: 0 48px;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--light-color);
+  font-weight: 700;
 }
 
 .header .action-list {
@@ -26,5 +32,5 @@
 }
 
 .action-list .action-item {
-  padding: 0 12px;
+  padding-left: 12px;
 }

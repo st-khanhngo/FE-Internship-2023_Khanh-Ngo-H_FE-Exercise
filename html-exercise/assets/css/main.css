@@ -38,9 +38,13 @@
   text-align: start;
 }
 
+.section-banner .section-link:hover {
+  color: var(--primary-color)
+}
+
 /* note */
 .banner-note {
-  width: 80%;
+  max-width: calc(100vw - var(--container-side));
   position: absolute;
   bottom: 0;
   left: 0;
@@ -99,6 +103,10 @@
   height: 100%;
 }
 
+.highlight-item .highlight:hover {
+  opacity: 0.8;
+}
+
 .highlight-list .highlight-item:first-child .highlight {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/highlight-1.png") no-repeat;
   background-size: cover;
@@ -131,6 +139,10 @@
   left: 10%;
 }
 
+.highlight .highlight-link:hover {
+  background-color: var(--gray-bg-color);
+}
+
 .highlight .discount {
   top: 35%;
   left: 10%
@@ -143,6 +155,11 @@
 .section-recommend .section-header{
   justify-content: space-between;
   margin-bottom: 30px; 
+}
+
+.section-recommend .btn-recommend:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color)
 }
 
 /* information */

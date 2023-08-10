@@ -5,6 +5,10 @@
   padding-top: 18px;
 }
 
+.product-item .product:hover {
+  box-shadow: 4px 4px var(--gray-bg-color);
+}
+
 .product-discount{
   position: relative;
 }
