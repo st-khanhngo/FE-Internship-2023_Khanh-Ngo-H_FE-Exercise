@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  box-shadow: none;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden; 
+}
+
+body {
+  position: relative;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color)
+}

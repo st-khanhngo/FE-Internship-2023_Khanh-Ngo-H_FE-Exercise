@@ -1,0 +1,36 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 42px 0;
+  z-index: 1;
+}
+
+.header .container {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-main .nav-list {
+  justify-content: space-between;
+  font-size: 18px;
+}
+
+.nav-list .nav-item {
+  padding: 0 48px;
+}
+
+.nav-item .nav-link:hover {
+  color: var(--light-color);
+  font-weight: 700;
+}
+
+.header .action-list {
+  justify-content: space-around;
+  align-items: center;
+}
+
+.action-list .action-item {
+  padding-left: 12px;
+}

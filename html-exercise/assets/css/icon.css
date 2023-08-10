@@ -1,0 +1,103 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: no-repeat center;
+  vertical-align: middle;
+}
+
+.icon-overlay {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  background-color: var(--light-color);
+  border-radius: 8px;
+}
+
+.icon-search {
+  background-image: url('../images/ic-search.svg');
+}
+
+.icon-cart {
+  background-image: url('../images/ic-cart.svg');
+}
+
+.icon-profile {
+  background-image: url('../images/ic-avatar.svg');
+}
+
+.icon-arrow {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  background-image: url('../images/ic-arrow.svg');
+  border-radius: 50%;
+}
+
+.icon-info {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-overlay .icon-freeship {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: url('../images/ic-freeship.svg') no-repeat;
+}
+
+.icon-overlay .icon-payment {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background: url('../images/ic-payment.svg') no-repeat;
+}
+
+.icon-guaranteed {
+  background: url('../images/ic-guaranteed.svg') no-repeat;
+  background-size: cover;
+}
+
+.icon-quality {
+  background: url('../images/ic-quality.svg') no-repeat;
+  background-size: cover;
+}
+
+.note .icon-freeship {
+  background-image: url('../images/ic-freeship-fill.svg');
+}
+
+.note .icon-satisfied {
+  background-image: url('../images/ic-satisfied-fill.svg');
+}
+
+.note .icon-guaranteed {
+  background-image: url('../images/ic-guaranteed-fill.svg');
+}
+
+.icon-facebook {
+  background-image: url('../images/ic-fb.svg');
+}
+
+.icon-twitter {
+  background-image: url('../images/ic-twitter.svg');
+}
+
+.icon-linkedin {
+  background-image: url('../images/ic-linkedin.svg');
+}
+
+.icon-instagram {
+  background-image: url('../images/ic-insta.svg');
+}
+
+.icon-youtube {
+  background-image: url('../images/ic-youtube.svg');
+}

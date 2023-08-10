@@ -1,0 +1,17 @@
+.txt-primary {
+  color: var(--primary-color)
+}
+
+.discount{
+  position: absolute;
+  padding: 10px 20px;
+  background-color: var(--discount-bg-color);
+  border-radius: 20px;
+
+  color: var(--light-color);
+  font-size: 12px;
+}
+
+[class$="-mb"] {
+  display: none;
+}

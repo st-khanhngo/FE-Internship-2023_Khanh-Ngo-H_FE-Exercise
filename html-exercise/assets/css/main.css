@@ -1,0 +1,216 @@
+/* banner */
+.section-banner {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, rgba(0, 0, 0, 0.50) 100%), url("../images/header-bg.png");
+  background-size: cover;
+}
+
+.section-banner .section-header {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  margin: 0;
+  padding-left: calc(var(--container-side) + 72px + 24px);
+}
+
+.section-banner .section-title {
+  padding-bottom: 24px;
+
+  color: var(--light-color);
+  font-size: 72px;
+  text-align: start;
+  font-weight: 700;
+  line-height: 101.5%;
+}
+
+.section-banner .section-title .txt-primary {
+  display: block;
+}
+
+.section-banner .section-link {
+  color: var(--light-color);
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: start;
+}
+
+.section-banner .section-link:hover {
+  color: var(--primary-color)
+}
+
+/* note */
+.banner-note {
+  max-width: calc(100vw - var(--container-side));
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 38px 64px;
+  padding-left: calc(var(--container-side) + 72px);
+
+  background-color: var(--light-color);
+  border-radius: 0 100px 0 0;
+}
+
+.banner-note .note-list {
+  justify-content: space-between;
+  padding: 0 24px;
+  height: auto;
+  align-items: baseline;
+}
+
+.note-item {
+  width: 300px;
+}
+
+.note .note-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.note .note-content {
+  width: 200px;
+  padding-left: 21px; 
+}
+
+.note .note-title {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.note .note-desc {
+  font-size: 12px;
+  color: var(--text-color)
+}
+
+/* highlight */
+.section-highlight {
+  padding-top: 48px
+}
+
+.section-highlight .highlight-list {
+  min-height: 360px;
+}
+.highlight-list .highlight-item {
+  display: inline-block;
+  position: relative;
+}
+
+.highlight-item .highlight{
+  height: 100%;
+}
+
+.highlight-item .highlight:hover {
+  opacity: 0.8;
+}
+
+.highlight-list .highlight-item:first-child .highlight {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/highlight-1.png") no-repeat;
+  background-size: cover;
+}
+
+.highlight-list .highlight-item:nth-child(2)  .highlight{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/highlight-2.png") no-repeat;
+  background-size: cover;
+}
+
+.highlight-list .highlight-item:last-child  .highlight{
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../images/highlight-3.png") no-repeat;
+  background-size: cover;
+}
+
+.highlight .highlight-title {
+  max-width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+
+  color: var(--light-color);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.highlight .highlight-link {
+  position: absolute;
+  top: 75%;
+  left: 10%;
+}
+
+.highlight .highlight-link:hover {
+  background-color: var(--gray-bg-color);
+}
+
+.highlight .discount {
+  top: 35%;
+  left: 10%
+}
+/* Recommend */
+.section-recommend {
+  padding: 30px 0 50px;
+}
+
+.section-recommend .section-header{
+  justify-content: space-between;
+  margin-bottom: 30px; 
+}
+
+.section-recommend .btn-recommend:hover {
+  background-color: var(--dark-color);
+  color: var(--light-color)
+}
+
+/* information */
+.section-info {
+  background-color: var(--gray-bg-color);
+  padding: 48px 0 54px;
+}
+
+.section-info .info-list {
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.info .icon-overlay,
+.info > .icon-info {
+  margin-left: 10px;
+}
+
+.info .info-title {
+  font-size: 16px;
+  font-weight: bolder;
+  margin: 46px 0 16px;
+}
+
+.info .info-desc {
+  color: var(--text-color)
+}
+
+/* subscribe */
+.section-subscribe {
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.00) 100%), url("../images/subscribe-bg.png") no-repeat;
+  background-size: cover;
+}
+
+.section-subscribe .subscribe-form {
+  height: 240px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+.subscribe-form .subscribe-content {
+  width: 500px;
+  display: inline-block;
+  color: var(--light-color);
+  font-size: 24px;
+}
+
+.subscribe-form .subscribe-input {
+  width: 65%;
+  margin-right: 30px;
+  padding: 16px 70px 16px 24px;
+  border-radius: 50px;
+}
