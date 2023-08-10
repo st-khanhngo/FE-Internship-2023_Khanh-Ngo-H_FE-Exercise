@@ -48,7 +48,7 @@
 }
 
 .banner-note {
-  max-width: calc(100vw - map-get($width, container-side));
+  width: 1100px;
   position: absolute;
   bottom: 0;
   left: 0;

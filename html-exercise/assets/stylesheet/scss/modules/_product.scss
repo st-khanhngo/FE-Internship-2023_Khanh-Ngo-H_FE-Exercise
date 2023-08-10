@@ -11,16 +11,12 @@
     }
 
     &-price-discount {
-      color: var(--discount-price-color);
+      color: map-get($color, price-discount);
       font-size: 20px;
     }
 
     .price-wrapper {
       justify-content: space-between;
-    }
-
-    &:hover {
-      box-shadow: 4px 4px var(--gray-bg-color);
     }
   }
 }

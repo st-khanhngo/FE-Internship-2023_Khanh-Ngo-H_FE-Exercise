@@ -30,12 +30,11 @@
   .section-subscribe {
     max-height: 200px;
     background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%),
-      url("../images/subscribe-bg-mb.png") no-repeat;
+      url("/html-exercise/assets/images/subscribe-bg-mb.png") no-repeat;
     background-size: cover;
 
     .subscribe-form {
       height: auto;
-      padding-top: 20px;
       .subscribe-content {
         max-width: 200px;
         font-size: 14px;

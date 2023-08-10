@@ -13,14 +13,13 @@
   flex-wrap: wrap;
   margin-left: -10px;
   margin-right: -10px;
-
-  .col {
-    padding: 0 10px;
-  }
-  @for $i from 1 through 12 {
-    .col-#{$i} {
-      width: percentage(calc($i/12));
-    }
+}
+.col {
+  padding: 0 10px;
+}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    width: percentage(calc($i/12));
   }
 }
 
