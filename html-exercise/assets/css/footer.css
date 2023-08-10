@@ -8,8 +8,8 @@
 }
 
 .footer-detail .footer-detail-desc {
-  margin: 24px 0 40px;
   max-width: 80%;
+  margin: 24px 0 40px;
 }
 
 .footer-detail .social-list {
@@ -24,8 +24,8 @@
   min-width: 20%;
 }
 .footer-content .footer-nav-title {
-  font-weight: 700;
   margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .footer-content .footer-nav-item {

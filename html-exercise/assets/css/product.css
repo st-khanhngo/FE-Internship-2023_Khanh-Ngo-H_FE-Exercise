@@ -24,8 +24,8 @@
 }
 
 .product-price-discount {
+  color: var(--discount-price-color);
   font-size: 20px;
-  color: var(--discount-price-color)
 }
 
 .product .price-wrapper {
