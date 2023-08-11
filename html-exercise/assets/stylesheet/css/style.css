@@ -334,7 +334,7 @@ a {
   color: #fbb03b;
 }
 .home-page .banner-note {
-  width: 1100px;
+  width: 80%;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -350,7 +350,7 @@ a {
   align-items: baseline;
 }
 .home-page .banner-note .note-list .note-item {
-  width: 300px;
+  width: 236px;
 }
 .home-page .note-item .note-icon {
   width: 36px;
