@@ -71,24 +71,26 @@
     }
   }
 
-  .note {
-    &-icon {
-      width: 36px;
-      height: 36px;
-    }
+  .note-item {
+    .note {
+      &-icon {
+        width: 36px;
+        height: 36px;
+      }
 
-    &-content {
-      width: 200px;
-      padding-left: 21px;
-    }
+      &-content {
+        width: 200px;
+        padding-left: 21px;
+      }
 
-    &-title {
-      font-size: 14px;
-      font-weight: bolder;
-    }
+      &-title {
+        font-size: 14px;
+        font-weight: bolder;
+      }
 
-    &-desc {
-      font-size: 12px;
+      &-desc {
+        font-size: 12px;
+      }
     }
   }
 
@@ -135,36 +137,38 @@
     }
   }
 
-  .highlight {
-    height: 100%;
+  .highlight-item {
+    .highlight {
+      height: 100%;
 
-    &-title {
-      max-width: 60%;
-      position: absolute;
-      top: 50%;
-      left: 10%;
+      &-title {
+        max-width: 60%;
+        position: absolute;
+        top: 50%;
+        left: 10%;
 
-      color: map-get($color, light);
-      font-size: 24px;
-      font-weight: 400;
-    }
+        color: map-get($color, light);
+        font-size: 24px;
+        font-weight: 400;
+      }
 
-    &-link {
-      position: absolute;
-      top: 75%;
-      left: 10%;
+      &-link {
+        position: absolute;
+        top: 75%;
+        left: 10%;
+
+        &:hover {
+          background-color: map-get($bg-color, grey);
+        }
+      }
 
       &:hover {
-        background-color: map-get($bg-color, grey);
+        opacity: 0.8;
       }
-    }
-
-    &:hover {
-      opacity: 0.8;
-    }
-    .discount {
-      top: 35%;
-      left: 10%;
+      .discount {
+        top: 35%;
+        left: 10%;
+      }
     }
   }
 
@@ -189,24 +193,26 @@
     .info-list {
       justify-content: space-between;
       padding-top: 50px;
-    }
-  }
+      .info {
+        .icon-overlay,
+        > .icon-info {
+          margin-left: 10px;
+        }
 
-  .info {
-    .icon-overlay,
-    > .icon-info {
-      margin-left: 10px;
-    }
-
-    &-title {
-      font-size: 16px;
-      font-weight: bolder;
-      margin: 46px 0 16px;
+        &-title {
+          font-size: 16px;
+          font-weight: bolder;
+          margin: 46px 0 16px;
+        }
+      }
     }
   }
 
   .section-product {
     padding: 96px 0;
+    .product-list {
+      padding-top: 18px;
+    }
   }
 
   .section-subscribe {
@@ -267,23 +273,20 @@
         margin-bottom: 8px;
         .highlight {
           min-height: 225px;
+          &-title {
+            max-width: 125px;
+            top: 65%;
+            width: 120px;
+            font-size: 14px;
+          }
+          &-link {
+            top: 85%;
+            left: 8%;
+          }
+          .discount {
+            top: 55%;
+          }
         }
-      }
-    }
-
-    .highlight {
-      &-title {
-        max-width: 125px;
-        top: 65%;
-        width: 120px;
-        font-size: 14px;
-      }
-      &-link {
-        top: 85%;
-        left: 8%;
-      }
-      .discount {
-        top: 55%;
       }
     }
 
@@ -301,6 +304,9 @@
     .section-product {
       .section-title {
         text-align: start;
+      }
+      .product-item {
+        margin-bottom: 8px;
       }
     }
 

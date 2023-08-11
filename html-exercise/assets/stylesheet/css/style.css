@@ -351,19 +351,19 @@ a {
 .home-page .banner-note .note-list .note-item {
   width: 300px;
 }
-.home-page .note-icon {
+.home-page .note-item .note-icon {
   width: 36px;
   height: 36px;
 }
-.home-page .note-content {
+.home-page .note-item .note-content {
   width: 200px;
   padding-left: 21px;
 }
-.home-page .note-title {
+.home-page .note-item .note-title {
   font-size: 14px;
   font-weight: bolder;
 }
-.home-page .note-desc {
+.home-page .note-item .note-desc {
   font-size: 12px;
 }
 .home-page .section-highlight {
@@ -388,10 +388,10 @@ a {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/html-exercise/assets/images/highlight-3.png") no-repeat;
   background-size: cover;
 }
-.home-page .highlight {
+.home-page .highlight-item .highlight {
   height: 100%;
 }
-.home-page .highlight-title {
+.home-page .highlight-item .highlight-title {
   max-width: 60%;
   position: absolute;
   top: 50%;
@@ -400,15 +400,15 @@ a {
   font-size: 24px;
   font-weight: 400;
 }
-.home-page .highlight-link {
+.home-page .highlight-item .highlight-link {
   position: absolute;
   top: 75%;
   left: 10%;
 }
-.home-page .highlight:hover {
+.home-page .highlight-item .highlight:hover {
   opacity: 0.8;
 }
-.home-page .highlight .discount {
+.home-page .highlight-item .highlight .discount {
   top: 35%;
   left: 10%;
 }
@@ -431,17 +431,20 @@ a {
   justify-content: space-between;
   padding-top: 50px;
 }
-.home-page .info .icon-overlay,
-.home-page .info > .icon-info {
+.home-page .section-info .info-list .info .icon-overlay,
+.home-page .section-info .info-list .info > .icon-info {
   margin-left: 10px;
 }
-.home-page .info-title {
+.home-page .section-info .info-list .info-title {
   font-size: 16px;
   font-weight: bolder;
   margin: 46px 0 16px;
 }
 .home-page .section-product {
   padding: 96px 0;
+}
+.home-page .section-product .product-list {
+  padding-top: 18px;
 }
 .home-page .section-subscribe {
   background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%), url("/html-exercise/assets/images/subscribe-bg.png") no-repeat;
@@ -492,17 +495,17 @@ a {
   .home-page .highlight-list .highlight-item .highlight {
     min-height: 225px;
   }
-  .home-page .highlight-title {
+  .home-page .highlight-list .highlight-item .highlight-title {
     max-width: 125px;
     top: 65%;
     width: 120px;
     font-size: 14px;
   }
-  .home-page .highlight-link {
+  .home-page .highlight-list .highlight-item .highlight-link {
     top: 85%;
     left: 8%;
   }
-  .home-page .highlight .discount {
+  .home-page .highlight-list .highlight-item .highlight .discount {
     top: 55%;
   }
   .home-page .section-recommend .section-header {
@@ -515,6 +518,9 @@ a {
   }
   .home-page .section-product .section-title {
     text-align: start;
+  }
+  .home-page .section-product .product-item {
+    margin-bottom: 8px;
   }
   .home-page .section-info .info-list {
     padding-top: 40px !important;
@@ -687,43 +693,36 @@ a {
     display: block;
   }
 }
-.product-list {
-  padding-top: 18px;
-}
-.product-list .product-title {
+.product-title {
   margin-top: 8px;
   font-weight: 300;
 }
-.product-list .product-price {
-  font-size: 20px;
-}
-.product-list .product-price-discount {
-  color: #ff0000;
-  font-size: 20px;
-}
-.product-list .product .price-wrapper {
-  justify-content: space-between;
-}
-
-.product-discount {
+.product.product-discount {
   position: relative;
 }
-.product-discount .discount {
+.product.product-discount .discount {
   top: 5%;
   left: 5%;
 }
-.product-discount .product-price {
+.product.product-discount .product-price {
   color: #cecece;
+}
+.product .price-wrapper {
+  justify-content: space-between;
+}
+.product-price {
+  font-size: 20px;
+}
+.product-price-discount {
+  color: #ff0000;
+  font-size: 20px;
 }
 
 @media only screen and (max-width: 768px) {
-  .product-item {
-    margin-bottom: 8px;
-  }
-  .product-item .product-title {
+  .product-title {
     font-size: 12px;
   }
-  .product-item .product-price, .product-item .product-price-discount {
+  .product-price, .product-price-discount {
     font-size: 10px;
   }
 }
