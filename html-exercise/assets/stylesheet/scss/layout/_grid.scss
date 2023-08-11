@@ -37,7 +37,7 @@
     }
 
     @for $i from 1 through 12 {
-      .col-xs-#{$i} {
+      .col-mb-#{$i} {
         width: percentage(calc($i/12)) !important;
       }
     }

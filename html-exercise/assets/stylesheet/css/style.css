@@ -146,40 +146,40 @@ h4 {
   .row .col {
     padding: 0 4px !important;
   }
-  .row .col-xs-1 {
+  .row .col-mb-1 {
     width: 8.3333333333% !important;
   }
-  .row .col-xs-2 {
+  .row .col-mb-2 {
     width: 16.6666666667% !important;
   }
-  .row .col-xs-3 {
+  .row .col-mb-3 {
     width: 25% !important;
   }
-  .row .col-xs-4 {
+  .row .col-mb-4 {
     width: 33.3333333333% !important;
   }
-  .row .col-xs-5 {
+  .row .col-mb-5 {
     width: 41.6666666667% !important;
   }
-  .row .col-xs-6 {
+  .row .col-mb-6 {
     width: 50% !important;
   }
-  .row .col-xs-7 {
+  .row .col-mb-7 {
     width: 58.3333333333% !important;
   }
-  .row .col-xs-8 {
+  .row .col-mb-8 {
     width: 66.6666666667% !important;
   }
-  .row .col-xs-9 {
+  .row .col-mb-9 {
     width: 75% !important;
   }
-  .row .col-xs-10 {
+  .row .col-mb-10 {
     width: 83.3333333333% !important;
   }
-  .row .col-xs-11 {
+  .row .col-mb-11 {
     width: 91.6666666667% !important;
   }
-  .row .col-xs-12 {
+  .row .col-mb-12 {
     width: 100% !important;
   }
 }
