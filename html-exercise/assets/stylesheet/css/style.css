@@ -297,21 +297,21 @@ a {
   color: #a8a8a8;
 }
 
-.section-banner {
+.home-page .section-banner {
   width: 100%;
   height: 100vh;
   position: relative;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url("/html-exercise/assets/images/header-bg.png");
   background-size: cover;
 }
-.section-banner .section-header {
+.home-page .section-banner .section-header {
   position: absolute;
   top: 25%;
   left: 0;
   margin: 0;
   padding-left: calc((100vw - 1152px) / 2 + 72px + 24px);
 }
-.section-banner .section-title {
+.home-page .section-banner .section-title {
   padding-bottom: 24px;
   color: #fff;
   font-size: 72px;
@@ -319,21 +319,20 @@ a {
   font-weight: 700;
   line-height: 101.5%;
 }
-.section-banner .section-title .txt-primary {
+.home-page .section-banner .section-title .txt-primary {
   display: block;
 }
-.section-banner .section-link {
+.home-page .section-banner .section-link {
   color: #fff;
   font-size: 24px;
   font-weight: 700;
   text-decoration: underline;
   text-align: start;
 }
-.section-banner .section-link:hover {
+.home-page .section-banner .section-link:hover {
   color: #fbb03b;
 }
-
-.banner-note {
+.home-page .banner-note {
   width: 1100px;
   position: absolute;
   bottom: 0;
@@ -343,59 +342,56 @@ a {
   background-color: #fff;
   border-radius: 0 100px 0 0;
 }
-.banner-note .note-list {
+.home-page .banner-note .note-list {
   justify-content: space-between;
   padding: 0 24px;
   height: auto;
   align-items: baseline;
 }
-.banner-note .note-list .note-item {
+.home-page .banner-note .note-list .note-item {
   width: 300px;
 }
-
-.note-icon {
+.home-page .note-icon {
   width: 36px;
   height: 36px;
 }
-.note-content {
+.home-page .note-content {
   width: 200px;
   padding-left: 21px;
 }
-.note-title {
+.home-page .note-title {
   font-size: 14px;
   font-weight: bolder;
 }
-.note-desc {
+.home-page .note-desc {
   font-size: 12px;
 }
-
-.section-highlight {
+.home-page .section-highlight {
   padding-top: 48px;
 }
-.section-highlight .highlight-list {
+.home-page .section-highlight .highlight-list {
   min-height: 360px;
 }
-.section-highlight .highlight-item {
+.home-page .section-highlight .highlight-item {
   display: inline-block;
   position: relative;
 }
-.section-highlight .highlight-item:first-child .highlight {
+.home-page .section-highlight .highlight-item:first-child .highlight {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/html-exercise/assets/images/highlight-1.png") no-repeat;
   background-size: cover;
 }
-.section-highlight .highlight-item:nth-child(2) .highlight {
+.home-page .section-highlight .highlight-item:nth-child(2) .highlight {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/html-exercise/assets/images/highlight-2.png") no-repeat;
   background-size: cover;
 }
-.section-highlight .highlight-item:last-child .highlight {
+.home-page .section-highlight .highlight-item:last-child .highlight {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("/html-exercise/assets/images/highlight-3.png") no-repeat;
   background-size: cover;
 }
-
-.highlight {
+.home-page .highlight {
   height: 100%;
 }
-.highlight-title {
+.home-page .highlight-title {
   max-width: 60%;
   position: absolute;
   top: 50%;
@@ -404,124 +400,162 @@ a {
   font-size: 24px;
   font-weight: 400;
 }
-.highlight-link {
+.home-page .highlight-link {
   position: absolute;
   top: 75%;
   left: 10%;
 }
-.highlight:hover {
+.home-page .highlight:hover {
   opacity: 0.8;
 }
-.highlight .discount {
+.home-page .highlight .discount {
   top: 35%;
   left: 10%;
 }
-
-.section-recommend {
+.home-page .section-recommend {
   padding: 30px 0 50px;
 }
-.section-recommend .section-header {
+.home-page .section-recommend .section-header {
   justify-content: space-between;
   margin-bottom: 30px;
 }
-.section-recommend .btn-recommend:hover {
+.home-page .section-recommend .btn-recommend:hover {
   background-color: #000;
   color: #fff;
 }
-
-.section-info {
+.home-page .section-info {
   background-color: #f6f6f6;
   padding: 48px 0 54px;
 }
-.section-info .info-list {
+.home-page .section-info .info-list {
   justify-content: space-between;
   padding-top: 50px;
 }
-
-.info .icon-overlay,
-.info > .icon-info {
+.home-page .info .icon-overlay,
+.home-page .info > .icon-info {
   margin-left: 10px;
 }
-.info-title {
+.home-page .info-title {
   font-size: 16px;
   font-weight: bolder;
   margin: 46px 0 16px;
 }
-
-.section-product {
+.home-page .section-product {
   padding: 96px 0;
+}
+.home-page .section-subscribe {
+  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%), url("/html-exercise/assets/images/subscribe-bg.png") no-repeat;
+  background-size: cover;
+  height: 240px;
+}
+.home-page .section-subscribe .subscribe-form {
+  height: 240px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+.home-page .section-subscribe .subscribe-form .subscribe-content {
+  width: 500px;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+}
+.home-page .section-subscribe .subscribe-form .subscribe-input {
+  width: 60%;
+  margin-right: 30px;
+  padding: 16px 70px 16px 24px;
+  border-radius: 50px;
 }
 
 @media only screen and (max-width: 768px) {
-  .section-banner {
+  .home-page .section-banner {
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.5) 100%), url("/html-exercise/assets/images/header-bg-sm.png") no-repeat;
     background-size: cover;
   }
-  .section-banner .section-header {
+  .home-page .section-banner .section-header {
     width: var(--container-width-sm);
     top: 40%;
     padding: 0 24px;
   }
-  .section-banner .section-header .section-title {
+  .home-page .section-banner .section-header .section-title {
     font-size: 48px;
   }
-  .section-banner .banner-note {
+  .home-page .section-banner .banner-note {
     display: none;
   }
-  .highlight-list {
+  .home-page .highlight-list {
     height: fit-content;
   }
-  .highlight-list .highlight-item {
+  .home-page .highlight-list .highlight-item {
     margin-bottom: 8px;
   }
-  .highlight-list .highlight-item .highlight {
+  .home-page .highlight-list .highlight-item .highlight {
     min-height: 225px;
   }
-  .highlight-title {
+  .home-page .highlight-title {
     max-width: 125px;
     top: 65%;
     width: 120px;
     font-size: 14px;
   }
-  .highlight-link {
+  .home-page .highlight-link {
     top: 85%;
     left: 8%;
   }
-  .highlight .discount {
+  .home-page .highlight .discount {
     top: 55%;
   }
-  .section-recommend .section-header {
+  .home-page .section-recommend .section-header {
     margin: 0;
     align-items: center;
   }
-  .section-recommend .btn-recommend {
+  .home-page .section-recommend .btn-recommend {
     height: fit-content;
     border: none !important;
   }
-  .section-product .section-title {
+  .home-page .section-product .section-title {
     text-align: start;
   }
-  .section-info .info-list {
+  .home-page .section-info .info-list {
     padding-top: 40px !important;
   }
-  .section-info .info.row {
+  .home-page .section-info .info.row {
     margin-bottom: 16px;
   }
-  .section-info .info-title {
+  .home-page .section-info .info-title {
     margin: 8px 0;
     font-size: 12px;
   }
-  .section-info .info .icon-info,
-  .section-info .info .icon-overlay {
+  .home-page .section-info .info .icon-info,
+  .home-page .section-info .info .icon-overlay {
     max-width: 68px;
     margin-left: 0;
     margin-right: 16px;
   }
-  .section-info .info-desc {
+  .home-page .section-info .info-desc {
     font-size: 10px;
   }
+  .home-page .section-subscribe {
+    max-height: 200px;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%), url("/html-exercise/assets/images/subscribe-bg-sm.png") no-repeat;
+    background-size: cover;
+  }
+  .home-page .section-subscribe .subscribe-form {
+    height: auto;
+  }
+  .home-page .section-subscribe .subscribe-form .subscribe-content {
+    max-width: 200px;
+    font-size: 14px;
+  }
+  .home-page .section-subscribe .subscribe-form .subscribe-input {
+    margin: 24px 0 16px;
+    padding: 6px 12px !important;
+  }
+  .home-page .section-subscribe .subscribe-form .btn-subscribe {
+    padding: 7px 18px;
+  }
 }
-.section:first-child, .section:last-child {
+.section {
   margin: 0;
 }
 .section-header {
@@ -542,51 +576,6 @@ a {
   }
   .section-header {
     margin-bottom: 0;
-  }
-}
-.section-subscribe {
-  background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%), url("/html-exercise/assets/images/subscribe-bg.png") no-repeat;
-  background-size: cover;
-  height: 240px;
-}
-.section-subscribe .subscribe-form {
-  height: 240px;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-}
-.section-subscribe .subscribe-form .subscribe-content {
-  width: 500px;
-  display: inline-block;
-  color: #fff;
-  font-size: 24px;
-}
-.section-subscribe .subscribe-form .subscribe-input {
-  width: 60%;
-  margin-right: 30px;
-  padding: 16px 70px 16px 24px;
-  border-radius: 50px;
-}
-
-@media only screen and (max-width: 768px) {
-  .section-subscribe {
-    max-height: 200px;
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0) 100%), url("/html-exercise/assets/images/subscribe-bg-sm.png") no-repeat;
-    background-size: cover;
-  }
-  .section-subscribe .subscribe-form {
-    height: auto;
-  }
-  .section-subscribe .subscribe-form .subscribe-content {
-    max-width: 200px;
-    font-size: 14px;
-  }
-  .section-subscribe .subscribe-form .subscribe-input {
-    margin: 24px 0 16px;
-    padding: 6px 12px !important;
-  }
-  .section-subscribe .subscribe-form .btn-subscribe {
-    padding: 7px 18px;
   }
 }
 .btn {
