@@ -209,6 +209,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .header {
+    position: fixed;
     padding: 20px 0;
     background-color: #fff;
   }
@@ -268,7 +269,7 @@ a {
   .footer-nav-col {
     margin-bottom: 24px;
   }
-  .footer-nav-item {
+  .footer-nav .item {
     font-size: 12px;
   }
 }
@@ -408,7 +409,7 @@ a {
 .home-page .highlight-item .highlight:hover {
   opacity: 0.8;
 }
-.home-page .highlight-item .highlight .discount {
+.home-page .highlight-item .highlight .badge {
   top: 35%;
   left: 10%;
 }
@@ -431,8 +432,7 @@ a {
   justify-content: space-between;
   padding-top: 50px;
 }
-.home-page .section-info .info-list .info .icon-overlay,
-.home-page .section-info .info-list .info > .icon-info {
+.home-page .section-info .info-list .info-info {
   margin-left: 10px;
 }
 .home-page .section-info .info-list .info-title {
@@ -505,11 +505,11 @@ a {
     top: 85%;
     left: 8%;
   }
-  .home-page .highlight-list .highlight-item .highlight .discount {
+  .home-page .highlight-list .highlight-item .highlight .badge {
     top: 55%;
   }
   .home-page .section-recommend .section-header {
-    margin: 0;
+    margin-bottom: 16px;
     align-items: center;
   }
   .home-page .section-recommend .btn-recommend {
@@ -519,7 +519,7 @@ a {
   .home-page .section-product .section-title {
     text-align: start;
   }
-  .home-page .section-product .product-item {
+  .home-page .product-item {
     margin-bottom: 8px;
   }
   .home-page .section-info .info-list {
@@ -529,11 +529,10 @@ a {
     margin-bottom: 16px;
   }
   .home-page .section-info .info-title {
-    margin: 8px 0;
-    font-size: 12px;
+    margin: 8px 0 !important;
+    font-size: 12px !important;
   }
-  .home-page .section-info .info .icon-info,
-  .home-page .section-info .info .icon-overlay {
+  .home-page .section-info .info .icon-info {
     max-width: 68px;
     margin-left: 0;
     margin-right: 16px;
@@ -575,7 +574,7 @@ a {
 
 @media only screen and (max-width: 768px) {
   .section {
-    padding: 24px 0;
+    padding: 24px 0 !important;
   }
   .section-title {
     font-size: 18px;
@@ -700,7 +699,7 @@ a {
 .product.product-discount {
   position: relative;
 }
-.product.product-discount .discount {
+.product.product-discount .badge-red {
   top: 5%;
   left: 5%;
 }
@@ -726,7 +725,7 @@ a {
     font-size: 10px;
   }
 }
-.discount {
+.badge-red {
   position: absolute;
   padding: 10px 20px;
   background-color: #ff0000;
@@ -736,7 +735,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .discount {
+  .badge-red {
     padding: 2px 4px;
     font-size: 8px;
   }

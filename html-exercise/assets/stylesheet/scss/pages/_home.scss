@@ -165,7 +165,7 @@
       &:hover {
         opacity: 0.8;
       }
-      .discount {
+      .badge {
         top: 35%;
         left: 10%;
       }
@@ -194,8 +194,7 @@
       justify-content: space-between;
       padding-top: 50px;
       .info {
-        .icon-overlay,
-        > .icon-info {
+        &-info {
           margin-left: 10px;
         }
 
@@ -283,7 +282,7 @@
             top: 85%;
             left: 8%;
           }
-          .discount {
+          .badge {
             top: 55%;
           }
         }
@@ -292,7 +291,7 @@
 
     .section-recommend {
       .section-header {
-        margin: 0;
+        margin-bottom: 16px;
         align-items: center;
       }
       .btn-recommend {
@@ -305,9 +304,9 @@
       .section-title {
         text-align: start;
       }
-      .product-item {
-        margin-bottom: 8px;
-      }
+    }
+    .product-item {
+      margin-bottom: 8px;
     }
 
     .section-info {
@@ -319,11 +318,10 @@
           margin-bottom: 16px;
         }
         &-title {
-          margin: 8px 0;
-          font-size: 12px;
+          margin: 8px 0 !important;
+          font-size: 12px !important;
         }
-        .icon-info,
-        .icon-overlay {
+        .icon-info {
           max-width: 68px;
           margin-left: 0;
           margin-right: 16px;

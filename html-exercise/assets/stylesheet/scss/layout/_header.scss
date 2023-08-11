@@ -23,6 +23,7 @@
 
 @media only screen and (max-width: 768px) {
   .header {
+    position: fixed;
     padding: 20px 0;
     background-color: map-get($color, light);
   }
