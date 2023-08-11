@@ -234,7 +234,6 @@ a {
 .footer-end {
   padding: 20px;
   border-top: 1px solid #fff;
-  text-align: center;
 }
 
 .footer-nav-col {
@@ -298,6 +297,11 @@ a {
   color: #a8a8a8;
 }
 
+.txt-center {
+  text-align: center;
+  vertical-align: middle;
+}
+
 .home-page .section-banner {
   width: 100%;
   height: 100vh;
@@ -316,7 +320,6 @@ a {
   padding-bottom: 24px;
   color: #fff;
   font-size: 72px;
-  text-align: start;
   font-weight: 700;
   line-height: 101.5%;
 }
@@ -328,7 +331,6 @@ a {
   font-size: 24px;
   font-weight: 700;
   text-decoration: underline;
-  text-align: start;
 }
 .home-page .section-banner .section-link:hover {
   color: #fbb03b;
@@ -511,9 +513,6 @@ a {
     height: fit-content;
     border: none !important;
   }
-  .home-page .section-product .section-title {
-    text-align: start;
-  }
   .home-page .product-item {
     margin-bottom: 8px;
   }
@@ -564,7 +563,6 @@ a {
 .section-title {
   font-size: 32px;
   font-weight: 300;
-  text-align: center;
 }
 
 @media only screen and (max-width: 768px) {

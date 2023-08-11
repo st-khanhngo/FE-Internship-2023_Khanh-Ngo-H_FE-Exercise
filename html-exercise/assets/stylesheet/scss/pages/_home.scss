@@ -25,7 +25,6 @@
         padding-bottom: 24px;
         color: map-get($color, light);
         font-size: 72px;
-        text-align: start;
         font-weight: 700;
         line-height: 101.5%;
 
@@ -39,7 +38,6 @@
         font-size: 24px;
         font-weight: 700;
         text-decoration: underline;
-        text-align: start;
 
         &:hover {
           color: map-get($color, primary);
@@ -295,11 +293,6 @@
       }
     }
 
-    .section-product {
-      .section-title {
-        text-align: start;
-      }
-    }
     .product-item {
       margin-bottom: 8px;
     }
