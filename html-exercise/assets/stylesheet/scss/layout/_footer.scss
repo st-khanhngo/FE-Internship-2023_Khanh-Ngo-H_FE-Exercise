@@ -29,20 +29,20 @@
 .footer-nav {
   &-col {
     min-width: 20%;
-  }
 
-  &-title {
-    margin-bottom: 12px;
-    font-weight: 700;
-  }
+    .title {
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
 
-  &-item {
-    display: block;
-    margin-top: 8px;
-  }
+    .item {
+      display: block;
+      margin-top: 8px;
+    }
 
-  &-link {
-    color: map-get($color, light);
+    .link {
+      color: map-get($color, light);
+    }
   }
 }
 
