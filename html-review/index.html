@@ -9,25 +9,37 @@
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="container">
-      <h1>
-        <a href="">
-          <img src="" alt="">
+      <h1 class="logo">
+        <a href="" class="logo-link">
+          <img class="logo-img" src="" alt="Pet Shop">
         </a>
       </h1>
-      <nav>
+
+      <nav class="nav-main">
         <ul class="nav-list">
-          <li class="nav-item"></li>
-          <li class="nav-item"></li>
-          <li class="nav-item"></li>
-          <li class="nav-item"></li>
-          <li class="nav-item"></li>
+          <li class="nav-item txt-primary">
+            <a href="" class="nav-link">Pets</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Accessories</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Collections</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link"></a>Components
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Brands</a>
+          </li>
         </ul>
       </nav>
 
-      <a href="">
-        <i></i>
+      <a href="" class="header-cart btn btn-outline">
+        <i class="icon icon-cart"></i>
+        <span>Cart (0)</span>
       </a>
     </div>
   </header>
@@ -36,12 +48,12 @@
     <div class="home-page">
       <section class="section section-banner">
         <div class="container">
-          <div class="section-content">
+          <div class="section-body">
             <h2 class="section-title">Pet care in the store</h2>
             <p class="section-desc">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when
               an
               unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            <a href="" class="section-link">SHOP NOW</a>
+            <a href="" class="section-link btn btn-primary">SHOP NOW</a>
           </div>
         </div>
       </section>
@@ -49,38 +61,53 @@
       <section class="section section-category">
         <div class="container">
           <div class="section-header">
-            <h3 class="section-title"></h3>
+            <h3 class="section-title">Shop By Category</h3>
           </div>
+
           <div class="section-body">
             <ul class="category-list">
               <li class="category-item">
                 <div class="category">
-                  <img src="" alt="" class="category-img">
-                  <h4 class="category-title">Cat Food</h4>
+                  <a href="" class="category-link">
+                    <img src="" alt="Cat Food" class="category-img">
+                    <h4 class="category-title">Cat Food</h4>
+                  </a>
                 </div>
               </li>
+
               <li class="category-item">
                 <div class="category">
-                  <img src="" alt="" class="category-img">
-                  <h4 class="category-title">Cat Food</h4>
+                  <a href="" class="category-link">
+                    <img src="" alt="Cat Food" class="category-img">
+                    <h4 class="category-title">Cat Food</h4>
+                  </a>
                 </div>
               </li>
+
               <li class="category-item">
                 <div class="category">
-                  <img src="" alt="" class="category-img">
-                  <h4 class="category-title">Cat Food</h4>
+                  <a href="" class="category-link">
+                    <img src="" alt="Cat Food" class="category-img">
+                    <h4 class="category-title">Cat Food</h4>
+                  </a>
                 </div>
               </li>
+
               <li class="category-item">
                 <div class="category">
-                  <img src="" alt="" class="category-img">
-                  <h4 class="category-title">Cat Food</h4>
+                  <a href="" class="category-link">
+                    <img src="" alt="Cat Food" class="category-img">
+                    <h4 class="category-title">Cat Food</h4>
+                  </a>
                 </div>
               </li>
+
               <li class="category-item">
                 <div class="category">
-                  <img src="" alt="" class="category-img">
-                  <h4 class="category-title">Cat Food</h4>
+                  <a href="" class="category-link">
+                    <img src="" alt="Cat Food" class="category-img">
+                    <h4 class="category-title">Cat Food</h4>
+                  </a>
                 </div>
               </li>
             </ul>
@@ -93,63 +120,83 @@
           <div class="section-header">
             <h3 class="section-title">Trending Products</h3>
           </div>
+
           <div class="section-body">
             <div class="product-filter">
               <h4 class="filter-title">Filter</h4>
               <ul class="filter-list">
-                <il class="filter-item">Accessories</il>
-                <il class="filter-item">Accessories</il>
-                <il class="filter-item">Accessories</il>
-                <il class="filter-item">Accessories</il>
-                <il class="filter-item">Accessories</il>
-                <il class="filter-item">Accessories</il>
-                <il class="filter-item">Accessories</il>
+                <li class="filter-item">Accessories</li>
+                <li class="filter-item">Accessories</li>
+                <li class="filter-item">Accessories</li>
+                <li class="filter-item">Accessories</li>
+                <li class="filter-item">Accessories</li>
+                <li class="filter-item">Accessories</li>
+                <li class="filter-item">Accessories</li>
               </ul>
             </div>
+
             <div class="product-wrapper">
               <ul class="product-list">
                 <li class="product-item">
                   <div class="product">
-                    <img src="" alt="">
-                    <div class="product-content">
-                      <h4 class="product-title">Lorem Ipsum passage</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>
-                      <span class="product-price">$ 120.00</span>
-                      <a href="product-link"><i class="icon icon-cart"></i>Add to cart</a>
-                    </div>
+                    <a href="" class="product-link">
+                      <img class="product-img" src="" alt="Food bowl">
+                      <span class="badge badge-red"></span>
+                      <div class="product-content">
+                        <h4 class="product-title">Lorem Ipsum passage</h4>
+                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry....</p>
+                        <span class="product-price">$ 120.00</span>
+                        <a href="" classname="product-action btn btn-outline">
+                          <i class="icon icon-cart"></i>Add to cart</a>
+                    </a>
                   </div>
                 </li>
+
                 <li class="product-item">
                   <div class="product">
-                    <img src="" alt="">
-                    <div class="product-content">
-                      <h4 class="product-title">Lorem Ipsum passage</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>
-                      <span class="product-price">$ 120.00</span>
-                      <a href="product-link"><i class="icon icon-cart"></i>Add to cart</a>
-                    </div>
+                    <a href="" class="product-link">
+                      <img class="product-img" src="" alt="Food bowl">
+                      <div class="product-content">
+                        <h4 class="product-title">Lorem Ipsum passage</h4>
+                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry....</p>
+                        <span class="product-price">$ 120.00</span>
+                        <a href="" classname="product-action btn btn-outline">
+                          <i class="icon icon-cart"></i>Add to cart</a>
+                    </a>
                   </div>
                 </li>
+
                 <li class="product-item">
                   <div class="product">
-                    <img src="" alt="">
-                    <div class="product-content">
-                      <h4 class="product-title">Lorem Ipsum passage</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>
-                      <span class="product-price">$ 120.00</span>
-                      <a href="product-link"><i class="icon icon-cart"></i>Add to cart</a>
-                    </div>
+                    <a href="" class="product-link">
+                      <img class="product-img" src="" alt="Food bowl">
+                      <div class="product-content">
+                        <h4 class="product-title">Lorem Ipsum passage</h4>
+                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry....
+                        </p>
+                        <span class="product-price">$ 120.00</span>
+                        <a href="" classname="product-action btn btn-outline">
+                          <i class="icon icon-cart"></i>Add to cart</a>
+                    </a>
                   </div>
                 </li>
+
                 <li class="product-item">
                   <div class="product">
-                    <img src="" alt="">
-                    <div class="product-content">
-                      <h4 class="product-title">Lorem Ipsum passage</h4>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry....</p>
-                      <span class="product-price">$ 120.00</span>
-                      <a href="product-link"><i class="icon icon-cart"></i>Add to cart</a>
-                    </div>
+                    <a href="" class="product-link">
+                      <img class="product-img" src="" alt="Food bowl">
+                      <div class="product-content">
+                        <h4 class="product-title">Lorem Ipsum passage</h4>
+                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
+                          industry....
+                        </p>
+                        <span class="product-price">$ 120.00</span>
+                        <a href="" classname="product-action btn btn-outline">
+                          <i class="icon icon-cart"></i>Add to cart</a>
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -157,48 +204,54 @@
           </div>
         </div>
       </section>
+
       <section class="section section-photo">
         <div class="section-header">
-          <h3 class="section-title"></h3>
+          <h3 class="section-title">Our Product Gallery</h3>
         </div>
+
         <div class="section-body">
           <ul class="photo-list">
             <li class="photo-item">
               <div class="photo">
                 <a href="" class="photo-link">
-                  <img src="" alt="">
+                  <img class="photo-img" src="" alt="Healthy Food">
                   <h4 class="photo-title">Healthy Food</h4>
                 </a>
               </div>
             </li>
+
             <li class="photo-item">
               <div class="photo">
                 <a href="" class="photo-link">
                   <h4 class="photo-title">Healthy Food</h4>
-                  <img src="" alt="">
+                  <img class="photo-img" src="" alt="Healthy Food">
                 </a>
               </div>
             </li>
+
             <li class="photo-item">
               <div class="photo">
                 <a href="" class="photo-link">
-                  <img src="" alt="">
+                  <img class="photo-img" src="" alt="Healthy Food">
                   <h4 class="photo-title">Healthy Food</h4>
                 </a>
               </div>
             </li>
+
             <li class="photo-item">
               <div class="photo">
                 <a href="" class="photo-link">
                   <h4 class="photo-title">Healthy Food</h4>
-                  <img src="" alt="">
+                  <img class="photo-img" src="" alt="Healthy Food">
                 </a>
               </div>
             </li>
+
             <li class="photo-item">
               <div class="photo">
                 <a href="" class="photo-link">
-                  <img src="" alt="">
+                  <img class="photo-img" src="" alt="Healthy Food">
                   <h4 class="photo-title">Healthy Food</h4>
                 </a>
               </div>
@@ -209,34 +262,30 @@
     </div>
   </main>
 
-  <footer>
-    <div class="footer-header">
-      <h5 class="footer-title">PET SHOP</h5>
-    </div>
+  <footer class="footer">
+    <h5 class="footer-title">PET SHOP</h5>
 
-    <div class="footer-body">
-      <ul class="contact-list">
-        <li class="contact-item">
-          <div class="contact">
-            <i></i>
-            <p class="contact-desc">petshop@yeudongvat.vn</p>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="contact">
-            <i></i>
-            <p class="contact-desc">(+84) 0367574000 (Ms. Chu)</p>
-          </div>
-        </li>
-        <li class="contact-item">
-          <div class="contact">
-            <i></i>
-            <p class="contact-desc">Tầng 2 toà nhà Ricco, số 363 Nguyễn Hữu Thọ,
-              Quận Cẩm lệ, Đà Nẵng, Việt Nam</p>
-          </div>
-        </li>
-      </ul>
-    </div>
+    <ul class="contact-list">
+      <li class="contact-item">
+        <div class="contact">
+          <i class="icon icon-mail"></i>
+          <p class="contact-desc">petshop@yeudongvat.vn</p>
+        </div>
+      </li>
+      <li class="contact-item">
+        <div class="contact">
+          <i class="icon icon-phone"></i>
+          <p class="contact-desc">(+84) 0367574000 (Ms. Chu)</p>
+        </div>
+      </li>
+      <li class="contact-item">
+        <div class="contact">
+          <i class="icon icon-location"></i>
+          <p class="contact-desc">Tầng 2 toà nhà Ricco, số 363 Nguyễn Hữu Thọ,
+            Quận Cẩm lệ, Đà Nẵng, Việt Nam</p>
+        </div>
+      </li>
+    </ul>
   </footer>
 </body>
 
