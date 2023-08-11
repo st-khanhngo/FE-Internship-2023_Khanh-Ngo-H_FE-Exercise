@@ -220,10 +220,10 @@
         rgba(0, 0, 0, 0.8) 0%,
         rgba(0, 0, 0, 0.5) 100%
       ),
-      url("/html-exercise/assets/images/header-bg-mb.png") no-repeat;
+      url("/html-exercise/assets/images/header-bg-sm.png") no-repeat;
     background-size: cover;
     .section-header {
-      width: var(--container-width-mb);
+      width: var(--container-width-sm);
       top: 40%;
       padding: 0 24px;
       .section-title {
