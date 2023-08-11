@@ -5,19 +5,19 @@
   background: no-repeat center;
   vertical-align: middle;
 
-  &.icon-search {
+  &-search {
     background-image: url("/html-exercise/assets/images/ic-search.svg");
   }
 
-  &.icon-cart {
+  &-cart {
     background-image: url("/html-exercise/assets/images/ic-cart.svg");
   }
 
-  &.icon-profile {
+  &-profile {
     background-image: url("/html-exercise/assets/images/ic-avatar.svg");
   }
 
-  &.icon-arrow {
+  &-arrow {
     width: 36px;
     height: 36px;
     margin-right: 12px;
@@ -25,84 +25,69 @@
     border-radius: 50%;
   }
 
-  &.icon-info {
-    width: 70px;
-    height: 70px;
+  &-freeship {
+    background-image: url("/html-exercise/assets/images/ic-freeship-fill.svg");
+  }
+  &-satisfied {
+    background-image: url("/html-exercise/assets/images/ic-satisfied-fill.svg");
+  }
+  &-guaranteed {
+    background-image: url("/html-exercise/assets/images/ic-guaranteed-fill.svg");
   }
 
-  &.icon-guaranteed {
-    background: url("/html-exercise/assets/images/ic-guaranteed.svg") no-repeat;
-    background-size: cover;
+  &.icon {
+    &-info {
+      width: 70px;
+      height: 70px;
+      &.icon-freeship {
+        background: url("/html-exercise/assets/images/ic-freeship.svg")
+          no-repeat;
+      }
+      &.icon-payment {
+        background: url("/html-exercise/assets/images/ic-payment.svg") no-repeat;
+      }
+      &.icon-guaranteed {
+        background: url("/html-exercise/assets/images/ic-guaranteed.svg")
+          no-repeat;
+        background-size: cover;
+      }
+
+      &.icon-quality {
+        background: url("/html-exercise/assets/images/ic-quality.svg") no-repeat;
+        background-size: cover;
+      }
+    }
   }
 
-  &.icon-quality {
-    background: url("/html-exercise/assets/images/ic-quality.svg") no-repeat;
-    background-size: cover;
-  }
-
-  &.icon-facebook {
+  &-facebook {
     background-image: url("/html-exercise/assets/images/ic-fb.svg");
   }
 
-  &.icon-twitter {
+  &-twitter {
     background-image: url("/html-exercise/assets/images/ic-twitter.svg");
   }
 
-  &.icon-linkedin {
+  &-linkedin {
     background-image: url("/html-exercise/assets/images/ic-linkedin.svg");
   }
 
-  &.icon-instagram {
+  &-instagram {
     background-image: url("/html-exercise/assets/images/ic-insta.svg");
   }
 
-  &.icon-youtube {
+  &-youtube {
     background-image: url("/html-exercise/assets/images/ic-youtube.svg");
   }
-}
 
-.icon-overlay {
-  width: 70px;
-  height: 70px;
-  position: relative;
-  background-color: map-get($color, light);
-  border-radius: 8px;
-
-  .icon {
-    &-freeship {
-      position: absolute;
-      width: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      background: url("/html-exercise/assets/images/ic-freeship.svg") no-repeat;
-    }
-
-    &-payment {
-      position: absolute;
-      width: 50%;
-      height: 50%;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-
-      background: url("/html-exercise/assets/images/ic-payment.svg") no-repeat;
-    }
+  &-cart-sm {
+    background: url("/html-exercise/assets/images/ic-cart-sm.svg") no-repeat;
   }
-}
 
-.note {
-  .icon {
-    &-freeship {
-      background-image: url("/html-exercise/assets/images/ic-freeship-fill.svg");
-    }
-    &-satisfied {
-      background-image: url("/html-exercise/assets/images/ic-satisfied-fill.svg");
-    }
-    &-guaranteed {
-      background-image: url("/html-exercise/assets/images/ic-guaranteed-fill.svg");
-    }
+  &-profile-sm {
+    background: url("/html-exercise/assets/images/ic-profile-sm.svg") no-repeat;
+  }
+  &-menu-sm {
+    background: url("/html-exercise/assets/images/ic-menu.svg") no-repeat;
   }
 }
 
@@ -116,19 +101,5 @@
 
   [class$="-sm"] {
     display: block;
-  }
-
-  .icon {
-    &-cart-sm {
-      background: url("/html-exercise/assets/images/ic-cart-sm.svg") no-repeat;
-    }
-
-    &-profile-sm {
-      background: url("/html-exercise/assets/images/ic-profile-sm.svg")
-        no-repeat;
-    }
-    &-menu-sm {
-      background: url("/html-exercise/assets/images/ic-menu.svg") no-repeat;
-    }
   }
 }

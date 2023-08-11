@@ -618,83 +618,72 @@ a {
   background: no-repeat center;
   vertical-align: middle;
 }
-.icon.icon-search {
+.icon-search {
   background-image: url("/html-exercise/assets/images/ic-search.svg");
 }
-.icon.icon-cart {
+.icon-cart {
   background-image: url("/html-exercise/assets/images/ic-cart.svg");
 }
-.icon.icon-profile {
+.icon-profile {
   background-image: url("/html-exercise/assets/images/ic-avatar.svg");
 }
-.icon.icon-arrow {
+.icon-arrow {
   width: 36px;
   height: 36px;
   margin-right: 12px;
   background-image: url("/html-exercise/assets/images/ic-arrow.svg");
   border-radius: 50%;
 }
+.icon-freeship {
+  background-image: url("/html-exercise/assets/images/ic-freeship-fill.svg");
+}
+.icon-satisfied {
+  background-image: url("/html-exercise/assets/images/ic-satisfied-fill.svg");
+}
+.icon-guaranteed {
+  background-image: url("/html-exercise/assets/images/ic-guaranteed-fill.svg");
+}
 .icon.icon-info {
   width: 70px;
   height: 70px;
 }
-.icon.icon-guaranteed {
+.icon.icon-info.icon-freeship {
+  background: url("/html-exercise/assets/images/ic-freeship.svg") no-repeat;
+}
+.icon.icon-info.icon-payment {
+  background: url("/html-exercise/assets/images/ic-payment.svg") no-repeat;
+}
+.icon.icon-info.icon-guaranteed {
   background: url("/html-exercise/assets/images/ic-guaranteed.svg") no-repeat;
   background-size: cover;
 }
-.icon.icon-quality {
+.icon.icon-info.icon-quality {
   background: url("/html-exercise/assets/images/ic-quality.svg") no-repeat;
   background-size: cover;
 }
-.icon.icon-facebook {
+.icon-facebook {
   background-image: url("/html-exercise/assets/images/ic-fb.svg");
 }
-.icon.icon-twitter {
+.icon-twitter {
   background-image: url("/html-exercise/assets/images/ic-twitter.svg");
 }
-.icon.icon-linkedin {
+.icon-linkedin {
   background-image: url("/html-exercise/assets/images/ic-linkedin.svg");
 }
-.icon.icon-instagram {
+.icon-instagram {
   background-image: url("/html-exercise/assets/images/ic-insta.svg");
 }
-.icon.icon-youtube {
+.icon-youtube {
   background-image: url("/html-exercise/assets/images/ic-youtube.svg");
 }
-
-.icon-overlay {
-  width: 70px;
-  height: 70px;
-  position: relative;
-  background-color: #fff;
-  border-radius: 8px;
+.icon-cart-sm {
+  background: url("/html-exercise/assets/images/ic-cart-sm.svg") no-repeat;
 }
-.icon-overlay .icon-freeship {
-  position: absolute;
-  width: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: url("/html-exercise/assets/images/ic-freeship.svg") no-repeat;
+.icon-profile-sm {
+  background: url("/html-exercise/assets/images/ic-profile-sm.svg") no-repeat;
 }
-.icon-overlay .icon-payment {
-  position: absolute;
-  width: 50%;
-  height: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: url("/html-exercise/assets/images/ic-payment.svg") no-repeat;
-}
-
-.note .icon-freeship {
-  background-image: url("/html-exercise/assets/images/ic-freeship-fill.svg");
-}
-.note .icon-satisfied {
-  background-image: url("/html-exercise/assets/images/ic-satisfied-fill.svg");
-}
-.note .icon-guaranteed {
-  background-image: url("/html-exercise/assets/images/ic-guaranteed-fill.svg");
+.icon-menu-sm {
+  background: url("/html-exercise/assets/images/ic-menu.svg") no-repeat;
 }
 
 [class$=-sm] {
@@ -707,15 +696,6 @@ a {
   }
   [class$=-sm] {
     display: block;
-  }
-  .icon-cart-sm {
-    background: url("/html-exercise/assets/images/ic-cart-sm.svg") no-repeat;
-  }
-  .icon-profile-sm {
-    background: url("/html-exercise/assets/images/ic-profile-sm.svg") no-repeat;
-  }
-  .icon-menu-sm {
-    background: url("/html-exercise/assets/images/ic-menu.svg") no-repeat;
   }
 }
 .product-list {
