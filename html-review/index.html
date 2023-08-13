@@ -10,36 +10,38 @@
 <body>
   <header class="header">
     <div class="container">
-      <h1 class="logo">
-        <a href="" class="logo-link">
-          <img class="logo-img" src="" alt="Pet Shop">
-        </a>
-      </h1>
-
-      <nav class="nav-main">
-        <ul class="nav-list flex">
-          <li class="nav-item txt-primary">
-            <a href="" class="nav-link">Pets</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Accessories</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Collections</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link"></a>Components
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link">Brands</a>
-          </li>
-        </ul>
-      </nav>
-
-      <a href="" class="header-cart btn btn-outline-primary">
-        <i class="icon icon-cart"></i>
-        <span>Cart (0)</span>
-      </a>
+      <div class="header-wrapper flex">
+        <h1 class="logo">
+          <a href="" class="logo-link">
+            <img class="logo-img" src="" alt="Pet Shop">
+          </a>
+        </h1>
+        <nav class="nav-main">
+          <ul class="nav-list flex">
+            <li class="nav-item active">
+              <a href="" class="nav-link">Pets</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Accessories</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link"></a>Components
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link">Brands</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header-action">
+          <a href="" class="btn btn-outline-primary">
+            <i class="icon icon-cart"></i>
+            <span>Cart (0)</span>
+          </a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -156,10 +158,10 @@
                       <span class="badge badge-danger"></span>
                       <div class="product-content">
                         <h4 class="product-title">Lorem Ipsum passage</h4>
-                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry....</p>
+                        <p class="product-desc text-truncate">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry....</p>
                         <span class="product-price">$ 120.00</span>
-                        <a href="" classname="product-action btn btn-outline">
+                        <a href="" classname="product-action btn btn-outline-primary">
                           <i class="icon icon-cart"></i>Add to cart
                         </a>
                     </a>
@@ -172,10 +174,10 @@
                       <img class="product-img" src="" alt="Food bowl">
                       <div class="product-content">
                         <h4 class="product-title">Lorem Ipsum passage</h4>
-                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry....</p>
+                        <p class="product-desc text-truncate">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry....</p>
                         <span class="product-price">$ 120.00</span>
-                        <a href="" classname="product-action btn btn-outline">
+                        <a href="" classname="product-action btn btn-outline-primary">
                           <i class="icon icon-cart"></i>Add to cart
                         </a>
                     </a>
@@ -188,11 +190,11 @@
                       <img class="product-img" src="" alt="Food bowl">
                       <div class="product-content">
                         <h4 class="product-title">Lorem Ipsum passage</h4>
-                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry....
+                        <p class="product-desc text-truncate">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry....
                         </p>
                         <span class="product-price">$ 120.00</span>
-                        <a href="" classname="product-action btn btn-outline">
+                        <a href="" classname="product-action btn btn-outline-primary">
                           <i class="icon icon-cart"></i>Add to cart
                         </a>
                     </a>
@@ -205,11 +207,11 @@
                       <img class="product-img" src="" alt="Food bowl">
                       <div class="product-content">
                         <h4 class="product-title">Lorem Ipsum passage</h4>
-                        <p class="product-desc">Lorem Ipsum is simply dummy text of the printing and typesetting
-                          industry....
+                        <p class="product-desc text-truncate">Lorem Ipsum is simply dummy text of the printing and
+                          typesetting industry....
                         </p>
                         <span class="product-price">$ 120.00</span>
-                        <a href="" classname="product-action btn btn-outline">
+                        <a href="" classname="product-action btn btn-outline-primary">
                           <i class="icon icon-cart"></i>Add to cart
                         </a>
                     </a>
@@ -279,29 +281,36 @@
   </main>
 
   <footer class="footer bg-primary">
-    <h5 class="footer-title txt-center">PET SHOP</h5>
-
-    <ul class="contact-list txt-center">
-      <li class="contact-item">
-        <div class="contact">
-          <i class="icon icon-mail"></i>
-          <p class="contact-desc">petshop@yeudongvat.vn</p>
-        </div>
-      </li>
-      <li class="contact-item">
-        <div class="contact">
-          <i class="icon icon-phone"></i>
-          <p class="contact-desc">(+84) 0367574000 (Ms. Chu)</p>
-        </div>
-      </li>
-      <li class="contact-item">
-        <div class="contact">
-          <i class="icon icon-location"></i>
-          <p class="contact-desc">Tầng 2 toà nhà Ricco, số 363 Nguyễn Hữu Thọ,
-            Quận Cẩm lệ, Đà Nẵng, Việt Nam</p>
-        </div>
-      </li>
-    </ul>
+    <div class="container">
+      <h3 class="footer-title txt-center">PET SHOP</h3>
+      <ul class="contact-list txt-center">
+        <li class="contact-item">
+          <div class="contact">
+            <a href="mailto:petshop@yeudongvat.vn" class="contact-link">
+              <i class="icon icon-mail"></i>
+              <p class="contact-desc">petshop@yeudongvat.vn</p>
+            </a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact">
+            <a href="tel:+84367574000" class="contact-link">
+              <i class="icon icon-phone"></i>
+              <p class="contact-desc">(+84) 0367574000 (Ms. Chu)</p>
+            </a>
+          </div>
+        </li>
+        <li class="contact-item">
+          <div class="contact">
+            <a href="" class="contact-link">
+              <i class="icon icon-location"></i>
+              <p class="contact-desc">Tầng 2 toà nhà Ricco, số 363 Nguyễn Hữu Thọ,
+                Quận Cẩm lệ, Đà Nẵng, Việt Nam</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
   </footer>
 </body>
 
