@@ -90,7 +90,6 @@ img {
   font-size: 16px;
 }
 .product-desc {
-  max-width: 200px;
   display: block;
 }
 .product-price {
@@ -308,8 +307,15 @@ img {
   font-size: 20px;
 }
 .contact-item .contact-desc {
-  display: inline;
+  display: inline-block;
   margin-left: 18px;
+}
+.contact-item:last-child .icon {
+  vertical-align: top;
+}
+.contact-item:last-child .contact-desc {
+  margin: 0;
+  width: 400px;
 }
 
 .active {

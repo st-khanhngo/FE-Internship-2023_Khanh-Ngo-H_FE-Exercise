@@ -21,8 +21,17 @@
     font-size: 20px;
 
     &-desc {
-      display: inline;
+      display: inline-block;
       margin-left: 18px;
+    }
+  }
+  &:last-child {
+    .icon {
+      vertical-align: top;
+    }
+    .contact-desc {
+      margin: 0;
+      width: 400px;
     }
   }
 }
