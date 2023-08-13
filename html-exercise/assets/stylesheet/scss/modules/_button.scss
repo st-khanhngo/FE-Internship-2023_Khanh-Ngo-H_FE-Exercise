@@ -5,12 +5,12 @@
   font-size: 13px;
   font-weight: 700;
 
-  &.btn-subscribe {
+  &.btn-primary {
     padding: 16px 42px;
     background-color: map-get($color, primary);
   }
 
-  &.btn-recommend {
+  &.btn-outline-info {
     border: 1px solid #c4c4c4;
     font-weight: 700;
   }

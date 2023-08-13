@@ -1,4 +1,4 @@
-.badge-red {
+.badge-danger {
   position: absolute;
   padding: 10px 20px;
   background-color: map-get($bg-color, discount);
@@ -9,7 +9,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  .badge-red {
+  .badge-danger {
     padding: 2px 4px;
     font-size: 8px;
   }

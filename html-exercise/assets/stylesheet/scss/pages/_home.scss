@@ -177,7 +177,7 @@
       justify-content: space-between;
     }
 
-    .btn-recommend:hover {
+    .btn-outline-info:hover {
       background-color: map-get($color, dark);
       color: map-get($color, light);
     }
@@ -287,7 +287,7 @@
         margin-bottom: 16px;
         align-items: center;
       }
-      .btn-recommend {
+      .btn-outline-info {
         height: fit-content;
         border: none !important;
       }
@@ -338,7 +338,7 @@
           padding: 6px 12px !important;
         }
 
-        .btn-subscribe {
+        .btn-primary {
           padding: 7px 18px;
         }
       }

@@ -421,7 +421,7 @@ a {
 .home-page .section-recommend .section-header {
   justify-content: space-between;
 }
-.home-page .section-recommend .btn-recommend:hover {
+.home-page .section-recommend .btn-outline-info:hover {
   background-color: #000;
   color: #fff;
 }
@@ -509,7 +509,7 @@ a {
     margin-bottom: 16px;
     align-items: center;
   }
-  .home-page .section-recommend .btn-recommend {
+  .home-page .section-recommend .btn-outline-info {
     height: fit-content;
     border: none !important;
   }
@@ -550,7 +550,7 @@ a {
     margin: 24px 0 16px;
     padding: 6px 12px !important;
   }
-  .home-page .section-subscribe .subscribe-form .btn-subscribe {
+  .home-page .section-subscribe .subscribe-form .btn-primary {
     padding: 7px 18px;
   }
 }
@@ -583,11 +583,11 @@ a {
   font-size: 13px;
   font-weight: 700;
 }
-.btn.btn-subscribe {
+.btn.btn-primary {
   padding: 16px 42px;
   background-color: #fbb03b;
 }
-.btn.btn-recommend {
+.btn.btn-outline-info {
   border: 1px solid #c4c4c4;
   font-weight: 700;
 }
@@ -692,7 +692,7 @@ a {
 .product.product-discount {
   position: relative;
 }
-.product.product-discount .badge-red {
+.product.product-discount .badge-danger {
   top: 5%;
   left: 5%;
 }
@@ -718,7 +718,7 @@ a {
     font-size: 10px;
   }
 }
-.badge-red {
+.badge-danger {
   position: absolute;
   padding: 10px 20px;
   background-color: #ff0000;
@@ -728,7 +728,7 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-  .badge-red {
+  .badge-danger {
     padding: 2px 4px;
     font-size: 8px;
   }
