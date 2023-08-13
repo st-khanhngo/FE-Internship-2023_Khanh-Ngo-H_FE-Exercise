@@ -50,6 +50,50 @@ h3 {
   line-height: 120%;
 }
 
+.badge {
+  padding: 6px 4px;
+  border-radius: 4px;
+}
+.badge.badge-danger {
+  background-color: #eb5757;
+  color: #fff;
+}
+
+.btn {
+  padding: 12px 18px;
+  border-radius: 50px;
+}
+.btn.btn-primary {
+  padding: 9px 32px;
+  font-size: 16px;
+  background-color: #ffc017;
+  color: #fff;
+}
+.btn.btn-outline-primary {
+  border: 1px solid #ffc017;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: no-repeat center;
+  background-size: cover;
+  vertical-align: middle;
+}
+.icon.icon-cart {
+  background-image: url("/html-review/assets/img/ic-cart.svg");
+}
+.icon.icon-mail {
+  background-image: url("/html-review/assets/img/ic-mail.svg");
+}
+.icon.icon-phone {
+  background-image: url("/html-review/assets/img/ic-phone.svg");
+}
+.icon.icon-location {
+  background-image: url("/html-review/assets/img/ic-location.svg");
+}
+
 .container {
   max-width: 1220px;
   width: 100%;
@@ -197,6 +241,10 @@ h3 {
 }
 .contact-item .contact {
   font-size: 20px;
+}
+.contact-item .contact-desc {
+  display: inline;
+  margin-left: 18px;
 }
 
 .active {

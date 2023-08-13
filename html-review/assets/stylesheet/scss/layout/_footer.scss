@@ -19,5 +19,10 @@
   font-family: "Roboto", sans-serif;
   .contact {
     font-size: 20px;
+
+    &-desc {
+      display: inline;
+      margin-left: 18px;
+    }
   }
 }
