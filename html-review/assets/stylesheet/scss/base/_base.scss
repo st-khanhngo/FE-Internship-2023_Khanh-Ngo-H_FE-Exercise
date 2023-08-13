@@ -10,6 +10,10 @@ body {
   font-weight: 400;
 }
 
+body {
+  padding-top: 74px;
+}
+
 a {
   color: map-get($color, dark);
 }
@@ -24,4 +28,8 @@ h3 {
   font-size: 34px;
   font-weight: 700;
   line-height: 120%;
+}
+
+img {
+  width: -webkit-fill-available;
 }

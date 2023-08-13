@@ -1,6 +1,11 @@
 .badge {
+  position: absolute;
   padding: 6px 4px;
   border-radius: 4px;
+
+  font-family: "Nunito";
+  font-size: 9px;
+  font-weight: 700;
   &.badge {
     &-danger {
       background-color: map-get($map: $color, $key: danger);
