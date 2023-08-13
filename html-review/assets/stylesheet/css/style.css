@@ -180,12 +180,15 @@ h3 {
   padding: 48px 0 32px;
 }
 .footer-title {
+  margin-bottom: 32px;
   font-size: 26px;
   font-weight: 700;
   line-height: 30px;
 }
 .footer .contact-list {
   align-items: center;
+  max-width: 452px;
+  margin: 0 auto;
 }
 
 .contact-item {
@@ -194,6 +197,18 @@ h3 {
 }
 .contact-item .contact {
   font-size: 20px;
+}
+
+.active {
+  color: #ffc017;
+}
+
+.bg-primary {
+  background-color: #ffc017;
+}
+
+.txt-center {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

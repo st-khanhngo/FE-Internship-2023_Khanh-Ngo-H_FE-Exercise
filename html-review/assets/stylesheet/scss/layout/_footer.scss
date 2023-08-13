@@ -1,12 +1,16 @@
 .footer {
   padding: 48px 0 32px;
   &-title {
+    margin-bottom: 32px;
+
     font-size: 26px;
     font-weight: 700;
     line-height: 30px;
   }
   .contact-list {
     align-items: center;
+    max-width: 452px;
+    margin: 0 auto;
   }
 }
 

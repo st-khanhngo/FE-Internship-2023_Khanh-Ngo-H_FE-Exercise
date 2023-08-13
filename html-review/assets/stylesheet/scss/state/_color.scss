@@ -1,0 +1,7 @@
+.active {
+  color: map-get($map: $color, $key: primary);
+}
+
+.bg-primary {
+  background-color: map-get($map: $color, $key: primary);
+}
