@@ -1,5 +1,37 @@
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: percentage(calc($i/12));
+.container {
+  max-width: map-get($map: $width, $key: container);
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+
+  .col {
+    padding: 0 20px;
+  }
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      width: percentage(calc($i/12));
+    }
+  }
+
+  @for $i from 1 to 12 {
+    &-cols-#{$i} .col {
+      flex: 0 0 (calc(100% / $i));
+      max-width: calc(100% / $i);
+    }
   }
 }

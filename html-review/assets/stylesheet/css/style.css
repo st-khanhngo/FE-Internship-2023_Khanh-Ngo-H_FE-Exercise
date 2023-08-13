@@ -28,6 +28,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  position: relative;
   font-family: "Poppins", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -49,52 +50,150 @@ h3 {
   line-height: 120%;
 }
 
-.col-1 {
+.container {
+  max-width: 1220px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px;
+}
+.row .col {
+  padding: 0 20px;
+}
+.row .col-1 {
   width: 8.3333333333%;
 }
-
-.col-2 {
+.row .col-2 {
   width: 16.6666666667%;
 }
-
-.col-3 {
+.row .col-3 {
   width: 25%;
 }
-
-.col-4 {
+.row .col-4 {
   width: 33.3333333333%;
 }
-
-.col-5 {
+.row .col-5 {
   width: 41.6666666667%;
 }
-
-.col-6 {
+.row .col-6 {
   width: 50%;
 }
-
-.col-7 {
+.row .col-7 {
   width: 58.3333333333%;
 }
-
-.col-8 {
+.row .col-8 {
   width: 66.6666666667%;
 }
-
-.col-9 {
+.row .col-9 {
   width: 75%;
 }
-
-.col-10 {
+.row .col-10 {
   width: 83.3333333333%;
 }
-
-.col-11 {
+.row .col-11 {
   width: 91.6666666667%;
 }
-
-.col-12 {
+.row .col-12 {
   width: 100%;
+}
+.row-cols-1 .col {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+.row-cols-2 .col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.row-cols-3 .col {
+  flex: 0 0 33.3333333333%;
+  max-width: 33.3333333333%;
+}
+.row-cols-4 .col {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+.row-cols-5 .col {
+  flex: 0 0 20%;
+  max-width: 20%;
+}
+.row-cols-6 .col {
+  flex: 0 0 16.6666666667%;
+  max-width: 16.6666666667%;
+}
+.row-cols-7 .col {
+  flex: 0 0 14.2857142857%;
+  max-width: 14.2857142857%;
+}
+.row-cols-8 .col {
+  flex: 0 0 12.5%;
+  max-width: 12.5%;
+}
+.row-cols-9 .col {
+  flex: 0 0 11.1111111111%;
+  max-width: 11.1111111111%;
+}
+.row-cols-10 .col {
+  flex: 0 0 10%;
+  max-width: 10%;
+}
+.row-cols-11 .col {
+  flex: 0 0 9.0909090909%;
+  max-width: 9.0909090909%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  padding: 18px 0;
+  background-color: #fff;
+}
+.header-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-main .nav-list {
+  justify-content: space-between;
+}
+.nav-main .nav-list .nav-item {
+  padding: 0 16px;
+  font-weight: 500;
+}
+
+.footer {
+  padding: 48px 0 32px;
+}
+.footer-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.footer .contact-list {
+  align-items: center;
+}
+
+.contact-item {
+  padding-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.contact-item .contact {
+  font-size: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
