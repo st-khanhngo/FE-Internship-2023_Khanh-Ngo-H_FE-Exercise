@@ -1,0 +1,25 @@
+.section {
+  padding: 35px 0;
+
+  &-header {
+    margin-bottom: 56px;
+    position: relative;
+  }
+
+  &-title {
+    position: relative;
+
+    &.title-underline::after {
+      content: "";
+      width: 131px;
+      height: 2px;
+
+      position: absolute;
+      bottom: -16px;
+      left: 50%;
+      transform: translate(-50%);
+
+      background-color: map-get($map: $color, $key: primary);
+    }
+  }
+}

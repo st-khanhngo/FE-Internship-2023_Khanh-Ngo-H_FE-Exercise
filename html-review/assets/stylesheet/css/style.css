@@ -50,6 +50,27 @@ h3 {
   line-height: 120%;
 }
 
+.section {
+  padding: 35px 0;
+}
+.section-header {
+  margin-bottom: 56px;
+  position: relative;
+}
+.section-title {
+  position: relative;
+}
+.section-title.title-underline::after {
+  content: "";
+  width: 131px;
+  height: 2px;
+  position: absolute;
+  bottom: -16px;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #ffc017;
+}
+
 .badge {
   padding: 6px 4px;
   border-radius: 4px;
