@@ -1,0 +1,105 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: no-repeat center;
+  vertical-align: middle;
+
+  &-search {
+    background-image: url("/html-exercise/assets/images/ic-search.svg");
+  }
+
+  &-cart {
+    background-image: url("/html-exercise/assets/images/ic-cart.svg");
+  }
+
+  &-profile {
+    background-image: url("/html-exercise/assets/images/ic-avatar.svg");
+  }
+
+  &-arrow {
+    width: 36px;
+    height: 36px;
+    margin-right: 12px;
+    background-image: url("/html-exercise/assets/images/ic-arrow.svg");
+    border-radius: 50%;
+  }
+
+  &-freeship {
+    background-image: url("/html-exercise/assets/images/ic-freeship-fill.svg");
+  }
+  &-satisfied {
+    background-image: url("/html-exercise/assets/images/ic-satisfied-fill.svg");
+  }
+  &-guaranteed {
+    background-image: url("/html-exercise/assets/images/ic-guaranteed-fill.svg");
+  }
+
+  &.icon {
+    &-info {
+      width: 70px;
+      height: 70px;
+      &.icon-freeship {
+        background: url("/html-exercise/assets/images/ic-freeship.svg")
+          no-repeat;
+      }
+      &.icon-payment {
+        background: url("/html-exercise/assets/images/ic-payment.svg") no-repeat;
+      }
+      &.icon-guaranteed {
+        background: url("/html-exercise/assets/images/ic-guaranteed.svg")
+          no-repeat;
+        background-size: cover;
+      }
+
+      &.icon-quality {
+        background: url("/html-exercise/assets/images/ic-quality.svg") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+
+  &-facebook {
+    background-image: url("/html-exercise/assets/images/ic-fb.svg");
+  }
+
+  &-twitter {
+    background-image: url("/html-exercise/assets/images/ic-twitter.svg");
+  }
+
+  &-linkedin {
+    background-image: url("/html-exercise/assets/images/ic-linkedin.svg");
+  }
+
+  &-instagram {
+    background-image: url("/html-exercise/assets/images/ic-insta.svg");
+  }
+
+  &-youtube {
+    background-image: url("/html-exercise/assets/images/ic-youtube.svg");
+  }
+
+  &-cart-sm {
+    background: url("/html-exercise/assets/images/ic-cart-sm.svg") no-repeat;
+  }
+
+  &-profile-sm {
+    background: url("/html-exercise/assets/images/ic-profile-sm.svg") no-repeat;
+  }
+  &-menu-sm {
+    background: url("/html-exercise/assets/images/ic-menu.svg") no-repeat;
+  }
+}
+
+[class$="-sm"] {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  [class$="-lg"] {
+    display: none;
+  }
+
+  [class$="-sm"] {
+    display: block;
+  }
+}

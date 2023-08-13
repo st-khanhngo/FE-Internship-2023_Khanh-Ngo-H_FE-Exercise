@@ -1,0 +1,30 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 42px 0;
+  z-index: 1;
+
+  .container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .action-list {
+    justify-content: space-around;
+    align-items: center;
+
+    .action-item {
+      padding-left: 12px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    position: fixed;
+    padding: 20px 0;
+    background-color: map-get($color, light);
+  }
+}

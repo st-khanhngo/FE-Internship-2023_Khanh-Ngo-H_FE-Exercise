@@ -1,0 +1,16 @@
+.badge-danger {
+  position: absolute;
+  padding: 10px 20px;
+  background-color: map-get($bg-color, discount);
+  border-radius: 20px;
+
+  color: map-get($color, light);
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+  .badge-danger {
+    padding: 2px 4px;
+    font-size: 8px;
+  }
+}

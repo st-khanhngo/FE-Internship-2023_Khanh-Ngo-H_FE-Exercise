@@ -1,0 +1,7 @@
+.txt-primary {
+  color: map-get($color, primary);
+}
+
+.txt-secondary {
+  color: map-get($color, secondary);
+}

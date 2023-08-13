@@ -1,0 +1,21 @@
+$width: (
+  container: 1152px,
+  container-side: calc((100vw - 1152px) / 2),
+  container-sm: calc(100vw - 48px),
+);
+
+$color: (
+  primary: #fbb03b,
+  secondary: #a8a8a8,
+  title: #333333,
+  price: #cecece,
+  price-discount: #ff0000,
+  dark: #000,
+  light: #fff,
+  border: #c4c4c4,
+);
+
+$bg-color: (
+  info: #f6f6f6,
+  discount: #ff0000,
+);
