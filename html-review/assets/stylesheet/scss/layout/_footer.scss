@@ -1,0 +1,37 @@
+.footer {
+  padding: 48px 0 32px;
+  &-title {
+    margin-bottom: 32px;
+
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+  }
+  .contact-list {
+    align-items: center;
+    max-width: 452px;
+    margin: 0 auto;
+  }
+}
+
+.contact-item {
+  padding-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+  .contact {
+    font-size: 20px;
+
+    &-desc {
+      display: inline-block;
+      margin-left: 18px;
+    }
+  }
+  &:last-child {
+    .icon {
+      vertical-align: top;
+    }
+    .contact-desc {
+      margin: 0;
+      width: 400px;
+    }
+  }
+}

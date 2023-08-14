@@ -1,0 +1,35 @@
+.product {
+  position: relative;
+
+  &-content {
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+
+  &-title {
+    font-size: 16px;
+  }
+
+  &-desc {
+    display: block;
+  }
+
+  &-price {
+    display: block;
+  }
+
+  .badge {
+    top: 10px;
+    left: 28px;
+  }
+
+  .btn {
+    font-size: 10px;
+    padding: 8px 18px;
+    .icon {
+      width: 16px;
+      height: 16px;
+      margin-right: 5px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: no-repeat center;
+  background-size: cover;
+  vertical-align: middle;
+
+  &.icon {
+    &-cart {
+      background-image: url("/html-review/assets/img/ic-cart.svg");
+    }
+
+    &-mail {
+      background-image: url("/html-review/assets/img/ic-mail.svg");
+    }
+
+    &-phone {
+      background-image: url("/html-review/assets/img/ic-phone.svg");
+    }
+
+    &-location {
+      background-image: url("/html-review/assets/img/ic-location.svg");
+    }
+  }
+}

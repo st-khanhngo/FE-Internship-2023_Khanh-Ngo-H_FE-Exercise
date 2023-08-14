@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+
+  padding: 18px 0;
+  background-color: map-get($map: $color, $key: light);
+
+  &-wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
