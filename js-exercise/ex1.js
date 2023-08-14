@@ -3,6 +3,14 @@
 // Output: the new string
 // Ex: ("FE", 4) => 'FEFEFEFE'
 
-function repeat(string, times) {
-  return string.repeat(times);
+/**
+ * Returns s repeated n times.
+ *
+ * @param {string} str The initial string.
+ * @param {number} n The times, must be a natural number.
+ * @return {string} str repeated n times.
+ */
+
+function repeatString(str, n) {
+  return str.repeat(n);
 }

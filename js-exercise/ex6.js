@@ -4,12 +4,15 @@
 // Ex: ([1, 2, 3, 4, 5, 6, 7], 2) => 12
 // Ex: ([1, 2, 3, 4, 5, 6, 7], 3) => 9
 
-function sumDivisible(array, number) {
-  let sum = 0;
-  array.forEach(a => {
-    if (a % number == 0) {
-      sum += a;
-    }
-  })
-  return sum;
+/**
+ * Returns the sum of the ordered elements that are divisible by n in arr.
+ *
+ * @param {array} arr The array input.
+ * @param {number} n The divisor.
+ * @return {number} Sum of the elements that are divisible by n in arr.
+ */
+
+function sumDivisible(arr, n) {
+  let result = arr.reduce((sum, curr) => (curr % n === 0) ? sum + curr : sum, 0);
+  return result
 }

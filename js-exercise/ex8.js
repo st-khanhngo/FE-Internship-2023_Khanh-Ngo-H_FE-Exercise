@@ -4,6 +4,14 @@
 // Ex: ('12:30:29', 600) => '12:40:29'
 // Ex: ('23:30:29', 6000) => '01:10:29'
 
+/**
+ * Returns new time after add a period of time.
+ *
+ * @param {string} givenTime The time input.
+ * @param {number} period The period seconds number add.
+ * @return {string} new time after add a period of time.
+ */
+
 function addTime(givenTime, period) {
   let arr = givenTime.split(':').map(Number);
   let d = new Date();
