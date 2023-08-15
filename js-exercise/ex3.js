@@ -12,6 +12,5 @@
  */
 
 function truncateString(str, n) {
-  let s = str.split(' ').slice(0, n);
-  return s.join(' ');
+  return str.split(' ').slice(0, n).join(' ');
 }

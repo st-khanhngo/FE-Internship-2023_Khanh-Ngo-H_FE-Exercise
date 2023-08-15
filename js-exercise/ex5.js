@@ -10,10 +10,10 @@
  */
 
 function randomHex() {
-  let letters = "0123456789abcdef"
-  let hexCode = "#"
+  let letters = "0123456789abcdef";
+  let hexCode = "#";
   for (let i = 0; i < 6; i++) {
-    hexCode += letters[Math.floor(Math.random() * 16)]
+    hexCode += letters[Math.floor(Math.random() * 16)];
   }
-  return hexCode
+  return hexCode;
 }

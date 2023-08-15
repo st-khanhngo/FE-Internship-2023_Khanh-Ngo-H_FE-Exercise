@@ -14,6 +14,6 @@
 
 function countOccurence(str, subStr) {
   let rgxp = new RegExp(subStr.toLowerCase(), "gi");
-  let s = str.toLowerCase().match(rgxp);
-  return s.length;
+  let result = str.toLowerCase().match(rgxp);
+  return result.length;
 }
