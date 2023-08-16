@@ -11,7 +11,6 @@ const products = [
     name: 'Loose Knit 3/4 Sleeve',
     imageUrl: 'assets/images/product-2.png',
     price: '119.99',
-
   },
   {
     id: 3,
@@ -51,14 +50,14 @@ function loadProducts() {
 
         var btnAddToCart = document.createElement('button');
         btnAddToCart.innerHTML = 'ADD TO CART';
-        btnAddToCart.className = 'btn btn-primary btn-cart'
+        btnAddToCart.className = 'btn btn-primary btn-cart';
         btnAddToCart.addEventListener('click', function () {
           addToCart(prod);
         })
 
         var productLink = document.createElement('a');
         productLink.className = 'product-link';
-        product.append(btnAddToCart, productLink)
+        product.append(btnAddToCart, productLink);
 
         var badge = document.createElement('span');
         if (prod.discount) {
@@ -74,7 +73,7 @@ function loadProducts() {
 
         var productTitle = document.createElement('h4');
         productTitle.innerHTML = prod.name;
-        productTitle.className = 'product-title'
+        productTitle.className = 'product-title';
 
         productLink.append(badge, productImg, productTitle, loadPrice(prod));
       });
@@ -95,7 +94,7 @@ function loadPrice(product) {
   if (product.discount) {
     priceDiscount.innerHTML = (product.price * (100 - product.discount) / 100).toFixed(2);
     priceDiscount.className = 'product-price-discount';
-    priceWrapper.classList.add('flex')
+    priceWrapper.classList.add('flex');
   }
 
   priceWrapper.append(priceDiscount, productPrice);
@@ -115,19 +114,19 @@ function addToCart(product) {
     cartStorage.push({ id: product.id, count: 1 });
   }
 
-  localStorage.setItem("cart", JSON.stringify(cartStorage));
+  localStorage.setItem('cart', JSON.stringify(cartStorage));
   setCartPopup();
 }
 
 // Display total item in cart
 function setCartPopup() {
   var cartTotal = JSON.parse(localStorage.getItem('cart'))?.reduce(function (sum, item) {
-    return sum += item.count
-  }, 0)
+    return sum += item.count;
+  }, 0);
 
   if (cartTotal) {
     cartPopup.innerHTML = cartTotal;
-    cartPopup.className = 'badge badge-danger badge-cart'
+    cartPopup.className = 'badge badge-danger badge-cart';
     cartWrapper.appendChild(cartPopup);
   }
 }
