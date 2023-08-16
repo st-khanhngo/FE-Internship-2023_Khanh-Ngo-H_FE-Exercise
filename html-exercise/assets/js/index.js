@@ -92,12 +92,12 @@ function loadPrice(product) {
   productPrice.className = 'product-price';
 
   var priceDiscount = document.createElement('span');
-
   if (product.discount) {
     priceDiscount.innerHTML = (product.price * (100 - product.discount) / 100).toFixed(2);
     priceDiscount.className = 'product-price-discount';
     priceWrapper.classList.add('flex')
   }
+
   priceWrapper.append(priceDiscount, productPrice);
   return priceWrapper;
 }
@@ -106,7 +106,7 @@ function loadPrice(product) {
 function addToCart(product) {
   var cartStorage = JSON.parse(localStorage.getItem('cart')) || [];
 
-  let found = cartStorage.find(function (item) {
+  var found = cartStorage.find(function (item) {
     return item.id === product.id;
   })
   if (found) {
@@ -114,6 +114,7 @@ function addToCart(product) {
   } else {
     cartStorage.push({ id: product.id, count: 1 });
   }
+
   localStorage.setItem("cart", JSON.stringify(cartStorage));
   setCartPopup();
 }
@@ -123,6 +124,7 @@ function setCartPopup() {
   var cartTotal = JSON.parse(localStorage.getItem('cart'))?.reduce(function (sum, item) {
     return sum += item.count
   }, 0)
+
   if (cartTotal) {
     cartPopup.innerHTML = cartTotal;
     cartPopup.className = 'badge badge-danger badge-cart'
