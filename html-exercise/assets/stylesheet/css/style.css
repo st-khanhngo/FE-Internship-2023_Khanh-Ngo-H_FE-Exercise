@@ -205,6 +205,14 @@ a {
 }
 .header .action-list .action-item {
   padding-left: 12px;
+  position: relative;
+}
+.header .action-list .badge-cart {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  padding: 1px 4px;
+  font-size: 8px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -440,7 +448,7 @@ a {
   font-weight: bolder;
   margin: 24px 0 16px;
 }
-.home-page .section-product {
+.home-page > .section-product {
   padding: 96px 0;
 }
 .home-page .section-subscribe {
@@ -685,12 +693,15 @@ a {
     display: block;
   }
 }
+.product {
+  position: relative;
+}
+.product-link {
+  position: relative;
+}
 .product-title {
   margin-top: 8px;
   font-weight: 300;
-}
-.product.product-discount {
-  position: relative;
 }
 .product.product-discount .badge-danger {
   top: 5%;
@@ -698,6 +709,7 @@ a {
 }
 .product.product-discount .product-price {
   color: #cecece;
+  text-decoration: line-through;
 }
 .product .price-wrapper {
   justify-content: space-between;
@@ -705,9 +717,32 @@ a {
 .product-price {
   font-size: 20px;
 }
+.product-price::before {
+  content: "$";
+}
 .product-price-discount {
   color: #ff0000;
   font-size: 20px;
+}
+.product-price-discount::before {
+  content: "$";
+}
+.product .btn-primary {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+.product:hover .product-link {
+  opacity: 0.5;
+}
+.product:hover .btn {
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {

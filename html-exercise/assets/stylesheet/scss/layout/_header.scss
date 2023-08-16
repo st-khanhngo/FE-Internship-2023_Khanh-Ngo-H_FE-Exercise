@@ -17,6 +17,16 @@
 
     .action-item {
       padding-left: 12px;
+      position: relative;
+    }
+
+    .badge-cart {
+      position: absolute;
+      top: -10px;
+      left: 5px;
+      padding: 1px 4px;
+
+      font-size: 8px;
     }
   }
 }
