@@ -11,18 +11,21 @@ const products = [
     name: 'Loose Knit 3/4 Sleeve',
     imageUrl: 'assets/images/product-2.png',
     price: '119.99',
+    discount: 0
   },
   {
     id: 3,
     name: 'Basic Slim Fit T-Shirt',
     imageUrl: 'assets/images/product-3.png',
     price: '79.99',
+    discount: 0
   },
   {
     id: 4,
     name: 'Loose Textured T-Shirt',
     imageUrl: 'assets/images/product-4.png',
     price: '119.99',
+    discount: 0
   },
 ]
 
