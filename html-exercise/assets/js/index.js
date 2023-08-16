@@ -124,7 +124,7 @@ function addToCart(product) {
 // Display total item in cart
 function setCartPopup() {
   var cartTotal = JSON.parse(localStorage.getItem('cart'))?.reduce(function (sum, item) {
-    return sum += item.count;
+    return sum + item.count;
   }, 0);
 
   if (cartTotal) {
