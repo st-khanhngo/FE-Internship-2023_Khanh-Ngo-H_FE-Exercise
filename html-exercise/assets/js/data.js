@@ -1,4 +1,4 @@
-import { Product } from "./entity.js";
+import { Product } from './entity.js';
 
 const product1 = new Product(1, 'T-Shirt Summer Vibes', 'assets/images/product-1.png', 119.99, 30);
 const product2 = new Product(2, 'Loose Knit 3/4 Sleeve', 'assets/images/product-2.png', 119.99);

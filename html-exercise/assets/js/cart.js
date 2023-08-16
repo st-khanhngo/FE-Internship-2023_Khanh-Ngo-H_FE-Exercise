@@ -1,5 +1,5 @@
-import productList from "./data.js";
-import { CartItem } from "./entity.js";
+import productList from './data.js';
+import { CartItem } from './entity.js';
 
 // Add a product to cart
 function addToCart() {

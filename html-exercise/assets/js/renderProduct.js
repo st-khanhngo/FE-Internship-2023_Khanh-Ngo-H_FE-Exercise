@@ -1,4 +1,4 @@
-import productList from "./data.js";
+import productList from './data.js';
 
 const sectionProduct = document.querySelectorAll('.section-product .container');
 
