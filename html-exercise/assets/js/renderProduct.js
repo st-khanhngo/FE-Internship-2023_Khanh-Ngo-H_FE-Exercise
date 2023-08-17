@@ -31,5 +31,5 @@ export const loadProducts = () => {
     })
   }
   const cartBtn = document.querySelectorAll('.btn-cart');
-  cartBtn.forEach(btn => btn.addEventListener('click', () => addCartItem(btn)))
+  cartBtn.forEach(btn => btn.addEventListener('click', () => addCartItem(btn)));
 }
