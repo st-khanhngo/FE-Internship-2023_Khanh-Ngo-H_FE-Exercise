@@ -754,6 +754,21 @@ a {
     font-size: 10px;
   }
 }
+.cart {
+  padding: 20px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+.cart-img {
+  width: 40%;
+}
+.cart.product-discount .badge-danger {
+  top: 5%;
+  left: 5%;
+}
+.cart.product-discount .price-wrapper .product-price {
+  color: #cecece;
+  text-decoration: line-through;
+}
 .badge-danger {
   position: absolute;
   padding: 10px 20px;
