@@ -1,6 +1,7 @@
 import { loadProducts } from './renderProduct.js';
-import { addToCart, setCartPopup } from './cart.js';
+import { setCart } from './cart.js';
+import { loadCart } from './renderCart.js';
 
 loadProducts();
-setCartPopup();
-addToCart();
+setCart();
+loadCart();
