@@ -1,6 +1,5 @@
+import { addCartItem } from './cart.js';
 import productList from './data.js';
-
-const sectionProduct = document.querySelectorAll('.section-product .container');
 
 const productItem = () => {
   return (
@@ -25,9 +24,12 @@ const productItem = () => {
 }
 
 export const loadProducts = () => {
-  if (sectionProduct?.length) {
-    sectionProduct.forEach((section) => {
+  const productSections = document.querySelectorAll('.section-product .container');
+  if (productSections?.length) {
+    productSections.forEach((section) => {
       section.innerHTML = productItem();
     })
   }
+  const cartBtn = document.querySelectorAll('.btn-cart');
+  cartBtn.forEach(btn => btn.addEventListener('click', () => addCartItem(btn)));
 }
