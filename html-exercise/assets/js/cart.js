@@ -1,35 +1,57 @@
 import productList from './data.js';
 import { CartItem } from './entity.js';
+import { loadCart } from './renderCart.js';
+
+const cartStorage = JSON.parse(localStorage.getItem('cart')) || [];
 
 // Add a product to cart
-function addToCart() {
-  const cartBtn = document.querySelectorAll('.btn-cart');
-  cartBtn.forEach(btn => btn.addEventListener('click', () => {
-    const productIndex = Number.parseInt(btn.getAttribute('data-index'));
-    const product = productList.find((prod) => prod.id === productIndex);
+const addCartItem = (btnClick) => {
+  const productIndex = Number.parseInt(btnClick?.getAttribute('data-index'));
+  const product = productList.find((prod) => prod.id === productIndex);
+  const found = cartStorage.find((item) => item.id === productIndex);
+  if (found) {
+    found.quantity++;
+  } else {
+    const cart = new CartItem(1, product);
+    cartStorage.push(cart);
+  }
+  localStorage.setItem('cart', JSON.stringify(cartStorage));
+  setCart();
+}
 
-    const cartStorage = JSON.parse(localStorage.getItem('cart')) || [];
+// Reduce a product quantity in cart 
+const reduceCartItem = (btnClick) => {
+  const productIndex = Number.parseInt(btnClick?.getAttribute('data-index'));
+  const found = cartStorage.find((item) => item.id === productIndex);
+  if (found.quantity > 1) {
+    found.quantity--;
+  } else {
+    const index = cartStorage.indexOf(found);
+    cartStorage.splice(index, 1);
+  }
+  localStorage.setItem('cart', JSON.stringify(cartStorage));
+  setCart();
+}
 
-    const found = cartStorage.find((item) => item.id === productIndex)
-    if (found) {
-      found.quantity++;
-    } else {
-      const cart = new CartItem(1, ...Object.values(product));
-      cartStorage.push(cart);
-    }
-    localStorage.setItem('cart', JSON.stringify(cartStorage));
-    setCartPopup();
-  }))
-
+const deleteCartItem = (btnClick) => {
+  const productIndex = Number.parseInt(btnClick?.getAttribute('data-index'));
+  const index = cartStorage.findIndex((item) => item.id === productIndex);
+  cartStorage.splice(index, 1);
+  localStorage.setItem('cart', JSON.stringify(cartStorage));
+  setCart();
 }
 
 // Display total item in cart
-function setCartPopup() {
-  const cartWrapper = document.querySelectorAll('.action-item')[1];
-  const cartTotal = JSON.parse(localStorage.getItem('cart'))?.reduce((sum, item) => sum + item.quantity, 0);
+const setCart = () => {
+  const cartDisplay = document.querySelector('.badge-cart');
+  const cartTotal = cartStorage?.reduce((sum, item) => sum + item.quantity, 0);
   if (cartTotal) {
-    cartWrapper.innerHTML += `<span class="badge badge-danger badge-cart">${cartTotal}</span>`
+    cartDisplay.innerHTML = cartTotal;
+    cartDisplay.style.display = 'block';
+  } else {
+    cartDisplay.style.display = 'none';
   }
+  loadCart();
 }
 
-export { addToCart, setCartPopup }
+export { addCartItem, reduceCartItem, deleteCartItem, setCart }
