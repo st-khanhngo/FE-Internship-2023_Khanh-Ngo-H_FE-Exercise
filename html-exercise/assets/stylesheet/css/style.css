@@ -208,6 +208,7 @@ a {
   position: relative;
 }
 .header .action-list .badge-cart {
+  display: none;
   position: absolute;
   top: -10px;
   left: 5px;
