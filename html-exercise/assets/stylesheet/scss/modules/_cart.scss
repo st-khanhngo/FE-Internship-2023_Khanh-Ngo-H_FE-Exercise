@@ -1,22 +1,19 @@
 .cart {
-  padding: 20px 0;
-  border-bottom: 1px solid map-get($map: $color, $key: border);
-  &-img {
-    width: 40%;
-  }
+	padding: 20px 0;
+	border-bottom: 1px solid map-get($map: $color, $key: border);
+	&-img {
+		width: 40%;
+	}
 
-  &.product-discount {
-    .badge-danger {
-      top: 5%;
-      left: 5%;
-    }
+	&.product-discount {
+		.badge-danger {
+			top: 5%;
+			left: 5%;
+		}
 
-    .price-wrapper .product-price {
-      color: map-get($color, price);
-      text-decoration: line-through;
-    }
-  }
-
-  &-action {
-  }
+		.price-wrapper .product-price {
+			color: map-get($color, price);
+			text-decoration: line-through;
+		}
+	}
 }
