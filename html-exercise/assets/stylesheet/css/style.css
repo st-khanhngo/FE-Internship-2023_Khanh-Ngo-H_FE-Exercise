@@ -745,6 +745,9 @@ a {
 .product:hover .btn {
   display: block;
 }
+.product .unavailable.btn {
+  background-color: #ff0000;
+}
 
 @media only screen and (max-width: 768px) {
   .product-title {
