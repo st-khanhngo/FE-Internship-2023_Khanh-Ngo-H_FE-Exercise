@@ -1,6 +1,6 @@
-enum productStatus {
-  available= 'available',
-  unavailable = 'unavailable'
+enum ProductStatus {
+  unavailable,
+  available,
 }
 
 interface ProductProps {
@@ -9,7 +9,7 @@ interface ProductProps {
   imageUrl: string,
   price: number,
   discount?: number,
-  status: productStatus
+  status: string
 }
 
-export {ProductProps, productStatus}
+export {ProductProps, ProductStatus}

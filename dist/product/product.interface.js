@@ -1,6 +1,6 @@
-var productStatus;
-(function (productStatus) {
-    productStatus["available"] = "available";
-    productStatus["unavailable"] = "unavailable";
-})(productStatus || (productStatus = {}));
-export { productStatus };
+var ProductStatus;
+(function (ProductStatus) {
+    ProductStatus[ProductStatus["unavailable"] = 0] = "unavailable";
+    ProductStatus[ProductStatus["available"] = 1] = "available";
+})(ProductStatus || (ProductStatus = {}));
+export { ProductStatus };

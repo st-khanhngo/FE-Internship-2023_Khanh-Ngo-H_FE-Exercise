@@ -1,4 +1,4 @@
-import {ProductProps, productStatus} from "./product.interface";
+import {ProductProps, ProductStatus} from "./product.interface.js";
 
 class Product implements ProductProps {
   id: number;
@@ -6,7 +6,7 @@ class Product implements ProductProps {
   imageUrl: string;
   price: number;
   discount?: number = 0;
-  status: productStatus;
+  status: string;
 
   constructor(product: ProductProps) {
     const { id, name, imageUrl, price, discount, status } = product;
@@ -18,7 +18,7 @@ class Product implements ProductProps {
     if(discount) {
       this.discount = discount;
     }
-    this.status = status;
+    this.status = ProductStatus[status];
   }
 }
 

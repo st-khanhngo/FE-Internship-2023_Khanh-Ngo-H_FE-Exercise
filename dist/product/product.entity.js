@@ -1,3 +1,4 @@
+import { ProductStatus } from "./product.interface.js";
 class Product {
     constructor(product) {
         this.discount = 0;
@@ -10,7 +11,7 @@ class Product {
         if (discount) {
             this.discount = discount;
         }
-        this.status = status;
+        this.status = ProductStatus[status];
     }
 }
 export default Product;
