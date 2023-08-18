@@ -1,12 +1,12 @@
-class CartItem {
-    constructor(cartItem) {
-        const { id, name, imageUrl, price, discount, quantity } = cartItem;
-        this.id = id;
-        this.name = name;
-        this.imageUrl = imageUrl;
-        this.price = price;
-        this.discount = discount;
-        this.quantity = quantity;
+class Cart {
+    constructor(cartList) {
+        this.cartTotalPrice = () => {
+            // return this.cartList.reduce((total, item) => total + item.totalPrice, 0);
+        };
+        this.cartTotalItem = () => {
+            return this.cartList.reduce((total, item) => total + item.quantity, 0);
+        };
+        this.cartList = cartList;
     }
 }
-export default CartItem;
+export default Cart;

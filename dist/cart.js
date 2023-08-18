@@ -1,7 +1,21 @@
-import CartItem from "./cart/cart.entity.js";
-import { productList } from "./data.js";
+import productList from "./api/apiHandle.js";
+import CartItem from "./cart/cartItem.entity.js";
 import { loadCart } from "./renderCart.js";
 const cartStorage = JSON.parse(localStorage.getItem('cart')) || [];
+// Change cart item quantity
+const changeCartQuantity = (btnClick, quantity) => {
+    const productIndex = parseInt(btnClick === null || btnClick === void 0 ? void 0 : btnClick.getAttribute('data-index'));
+    const product = productList.find((prod) => prod.id === productIndex);
+    const cartItem = cartStorage.find((item) => (item === null || item === void 0 ? void 0 : item.id) === productIndex);
+    if (!cartItem) {
+        const cart = new CartItem(Object.assign(Object.assign({}, product), { quantity: 1 }));
+        cartStorage.push(cart);
+    }
+    else {
+        cartItem.quantity = quantity;
+        // cartItem.totalPrice = cartItem.itemTotalPrice(cartItem.finalPrice, cartItem.quantity);
+    }
+};
 // Add a product to cart
 const addCartItem = (btnClick) => {
     const productIndex = parseInt(btnClick === null || btnClick === void 0 ? void 0 : btnClick.getAttribute('data-index'));
@@ -9,6 +23,7 @@ const addCartItem = (btnClick) => {
     const cartItem = cartStorage.find((item) => (item === null || item === void 0 ? void 0 : item.id) === productIndex);
     if (cartItem) {
         cartItem.quantity++;
+        // cartItem.totalPrice = cartItem.itemTotalPrice(cartItem.finalPrice, cartItem.quantity);
     }
     else {
         const cart = new CartItem(Object.assign(Object.assign({}, product), { quantity: 1 }));
@@ -52,4 +67,4 @@ const setCart = () => {
     }
     loadCart();
 };
-export { addCartItem, reduceCartItem, deleteCartItem, setCart };
+export { addCartItem, reduceCartItem, deleteCartItem, setCart, changeCartQuantity };

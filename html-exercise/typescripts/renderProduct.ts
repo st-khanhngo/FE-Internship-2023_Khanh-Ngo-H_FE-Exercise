@@ -1,6 +1,5 @@
+import productList from './api/apiHandle.js';
 import { addCartItem } from './cart.js';
-import {productList} from './data.js';
-import Product from './product/product.entity.js';
 
 const productItem = () => {
   return (

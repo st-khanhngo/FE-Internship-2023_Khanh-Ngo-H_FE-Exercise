@@ -1,22 +1,19 @@
-import CartItemProps from "./cart.interface";
+import CartItem from "./cartItem.entity";
 
-class CartItem implements CartItemProps {
-  quantity: number;
-  id: number;
-  name: string;
-  imageUrl: string;
-  price: number;
-  discount: number;
+class Cart {
+  cartList : CartItem[];
 
-  constructor(cartItem: CartItemProps) {
-    const { id, name, imageUrl, price, discount, quantity } = cartItem;
-    this.id = id;
-    this.name = name;
-    this.imageUrl = imageUrl;
-    this.price = price;
-    this.discount = discount;
-    this.quantity = quantity;
+  constructor(cartList: CartItem[]) {
+    this.cartList = cartList;
+  }
+
+  cartTotalPrice = () => {
+    // return this.cartList.reduce((total, item) => total + item.totalPrice, 0);
+  }
+
+  cartTotalItem = () => {
+    return this.cartList.reduce((total, item) => total + item.quantity, 0);
   }
 }
 
-export default CartItem;
+export default Cart
