@@ -8,7 +8,7 @@ class Cart {
   }
 
   cartTotalPrice = () => {
-    // return this.cartList.reduce((total, item) => total + item.totalPrice, 0);
+    return this.cartList.reduce((total, item) => total + item.finalPrice * item.quantity, 0).toFixed(2);
   }
 
   cartTotalItem = () => {

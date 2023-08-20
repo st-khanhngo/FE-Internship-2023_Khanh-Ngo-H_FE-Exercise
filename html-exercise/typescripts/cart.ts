@@ -3,22 +3,22 @@ import Cart from "./cart/cart.entity.js";
 import CartItem from "./cart/cartItem.entity.js";
 import Product from "./product/product.entity.js";
 import { loadCart } from "./renderCart.js";
+import { StorageKey, getLocalStorage, saveToLocalStorage } from "./services/localStorage.service.js";
 
-const cartStorage : CartItem[] = JSON.parse(localStorage.getItem('cart')) || [];
+const cartStorage : CartItem[] = getLocalStorage(StorageKey.CART);
 
 // Change cart item quantity
-const changeCartQuantity = (btnClick: HTMLElement, quantity: number) => {
+const changeCartQuantity = (btnClick: HTMLElement, quantity: number) => {  
   const productIndex : number = parseInt(btnClick?.getAttribute('data-index'));
   const product : Product = productList.find((prod) => prod.id === productIndex);
   const cartItem : CartItem = cartStorage.find((item) => item?.id === productIndex);    
-
-  if (!cartItem) {
-    const cart = new CartItem({...product, quantity: 1});
-    cartStorage.push(cart);
-  } else {
+  if (quantity > 0) {
     cartItem.quantity = quantity;
-    // cartItem.totalPrice = cartItem.itemTotalPrice(cartItem.finalPrice, cartItem.quantity);
+  } else {
+    deleteCartItem(btnClick);
   }
+  saveToLocalStorage(StorageKey.CART, cartStorage)
+  setCart();
 }
 
 // Add a product to cart
@@ -27,26 +27,12 @@ const addCartItem = (btnClick : HTMLElement) => {
   const product : Product = productList.find((prod) => prod.id === productIndex);
   const cartItem : CartItem = cartStorage.find((item) => item?.id === productIndex);    
   if (cartItem) {
-    cartItem.quantity++;
-    // cartItem.totalPrice = cartItem.itemTotalPrice(cartItem.finalPrice, cartItem.quantity);
+    changeCartQuantity(btnClick, cartItem.quantity + 1);
   } else {
     const cart = new CartItem({...product, quantity: 1});
     cartStorage.push(cart);
   }
-  localStorage.setItem('cart', JSON.stringify(cartStorage));
-  setCart();
-}
-
-// Reduce a product quantity in cart 
-const reduceCartItem = (btnClick : HTMLElement) => {
-  const productIndex : number = Number.parseInt(btnClick?.getAttribute('data-index'));
-  const cartItem : CartItem = cartStorage.find((item) => item.id === productIndex);
-  if (cartItem.quantity > 1) {
-    cartItem.quantity--;
-  } else {
-    deleteCartItem(btnClick);
-  }
-  localStorage.setItem('cart', JSON.stringify(cartStorage));
+  saveToLocalStorage(StorageKey.CART, cartStorage)
   setCart();
 }
 
@@ -73,4 +59,4 @@ const setCart = () => {
   loadCart();
 }
 
-export { addCartItem, reduceCartItem, deleteCartItem, setCart, changeCartQuantity }
+export { addCartItem, deleteCartItem, setCart, changeCartQuantity }
