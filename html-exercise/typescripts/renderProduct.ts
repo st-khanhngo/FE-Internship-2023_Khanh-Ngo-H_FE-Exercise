@@ -35,6 +35,9 @@ export const loadProducts = () => {
   addToCartBtns.forEach(btn => btn.addEventListener('click', () => addCartItem(btn)));
 
   const unavailableBtns : NodeListOf<HTMLElement> = document.querySelectorAll('.btn.unavailable');
-  unavailableBtns.forEach(btn => btn.innerHTML = 'SOLD OUT');
+  unavailableBtns.forEach(btn => {
+    btn.innerHTML = 'SOLD OUT';
+    btn.style.display = "block";
+  });
 
 }

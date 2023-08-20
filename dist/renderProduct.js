@@ -28,5 +28,8 @@ export const loadProducts = () => {
     const addToCartBtns = document.querySelectorAll('.product.available .btn-cart');
     addToCartBtns.forEach(btn => btn.addEventListener('click', () => addCartItem(btn)));
     const unavailableBtns = document.querySelectorAll('.btn.unavailable');
-    unavailableBtns.forEach(btn => btn.innerHTML = 'SOLD OUT');
+    unavailableBtns.forEach(btn => {
+        btn.innerHTML = 'SOLD OUT';
+        btn.style.display = "block";
+    });
 };

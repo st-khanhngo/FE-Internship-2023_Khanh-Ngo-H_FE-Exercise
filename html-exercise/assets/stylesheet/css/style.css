@@ -796,13 +796,17 @@ a {
   color: #fff;
   cursor: pointer;
 }
-.product:hover .product-link {
+.product.available:hover .product-link {
   opacity: 0.5;
 }
-.product:hover .btn {
+.product.available:hover .btn {
   display: block;
 }
-.product .unavailable.btn {
+.product.unavailable .product-link {
+  cursor: default !important;
+  filter: contrast(25%);
+}
+.product.unavailable .btn {
   background-color: #ff0000;
 }
 

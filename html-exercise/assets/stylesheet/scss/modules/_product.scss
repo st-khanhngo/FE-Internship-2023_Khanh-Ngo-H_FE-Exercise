@@ -27,7 +27,7 @@
 	&-price {
 		font-size: 20px;
 		&::before {
-			content: "$";
+			content: '$';
 		}
 	}
 
@@ -35,7 +35,7 @@
 		color: map-get($color, price-discount);
 		font-size: 20px;
 		&::before {
-			content: "$";
+			content: '$';
 		}
 	}
 
@@ -51,7 +51,7 @@
 		color: map-get($map: $color, $key: light);
 		cursor: pointer;
 	}
-	&:hover {
+	&.available:hover {
 		.product-link {
 			opacity: 0.5;
 		}
@@ -60,8 +60,13 @@
 		}
 	}
 
-	.unavailable {
-		&.btn {
+	&.unavailable {
+		.product-link {
+			cursor: default !important;
+			filter: contrast(25%);
+		}
+
+		.btn {
 			background-color: map-get($color, price-discount);
 		}
 	}
