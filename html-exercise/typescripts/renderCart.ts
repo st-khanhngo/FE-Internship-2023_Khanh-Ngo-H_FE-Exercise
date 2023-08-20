@@ -18,29 +18,29 @@ const cartList = () : string => {
     ${cartList.map((item) => `
       <li class="cart-item">
         <div class="cart row ${item.discount ? "product-discount" : ""}">
-          <div class="cart-info col col-4">
+          <a class="cart-info col col-4" href="">
             <h4>${item.name}</h4>
-            ${item.discount ? `<span class="badge badge-danger">-${item.discount}%</span>` : ""}
             <img class="cart-img" src =${item.imageUrl}>
-          </div>
+          </a>
           <div class="btn-wrapper cart-action col col-4">
           <button class="btn btn-change" data-index=${item.id} data-id=${item.quantity - 1}>-</button>
           <span>${item.quantity}</span>
             <button class="btn btn-change" data-index=${item.id} data-id=${item.quantity + 1}>+</button>
-            <button class="btn btn-delete" data-index=${item.id}>Delete</button>
+            <button class="btn btn-delete" data-index=${item.id}>DELETE</button>
           </div>
           <div class="cart-price col col-4">
             <div class="price-wrapper">
               <span class="product-price">${item.price}</span>
               ${item.discount ? `<span class="product-price-discount">${item.finalPrice}</span>` : ''}
             </div>
-            <p>Total: <span class="product-price">${item.itemTotalPrice(item.price, item.quantity)}</span></p>        
+            <p class="price-total">Total: <span class="product-price">${item.itemTotalPrice(item.price, item.quantity)}</span></p>        
           </div>
         </div>
       </li>
     `).join('')}
-    <span>TOTAL CART PRICE: $${cart.cartTotalPrice()}</span>
-    </ul>`
+    </ul>
+    <p class="cart-total">TOTAL CART PRICE: $${cart.cartTotalPrice()}</p>
+    `
   }
 }
 
@@ -49,7 +49,12 @@ export const loadCart = () => {
   if (cartWrapper && getCartStorage().length) {
     cartWrapper.innerHTML = cartList();
   } else if (cartWrapper) {
-    cartWrapper.innerHTML = `CART EMPTY`
+    cartWrapper.innerHTML = `
+    <div class="section section-cart cart-empty">
+      <h3 class="section-header">CART IS EMPTY</h3>
+      <a class="btn btn-primary">Continue Shopping</a>
+    </div>
+    `
   }
 
   const changeQuantities : NodeListOf<HTMLElement> = document.querySelectorAll('.btn-change');
