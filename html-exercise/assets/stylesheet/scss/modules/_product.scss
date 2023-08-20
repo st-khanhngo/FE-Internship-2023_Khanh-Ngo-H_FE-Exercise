@@ -62,11 +62,11 @@
 
 	&.unavailable {
 		.product-link {
-			cursor: default !important;
 			filter: contrast(25%);
 		}
 
 		.btn {
+			cursor: default !important;
 			background-color: map-get($color, price-discount);
 		}
 	}

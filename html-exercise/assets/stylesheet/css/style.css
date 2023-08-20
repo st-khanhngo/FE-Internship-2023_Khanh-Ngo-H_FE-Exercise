@@ -803,10 +803,10 @@ a {
   display: block;
 }
 .product.unavailable .product-link {
-  cursor: default !important;
   filter: contrast(25%);
 }
 .product.unavailable .btn {
+  cursor: default !important;
   background-color: #ff0000;
 }
 
