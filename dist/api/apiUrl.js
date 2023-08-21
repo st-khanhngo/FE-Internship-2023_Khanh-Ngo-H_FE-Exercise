@@ -1,3 +1,3 @@
 export const endpoints = {
-    PRODUCTS: '/html-exercise/productList.json'
+	PRODUCTS: '/html-exercise/productList.json'
 };
