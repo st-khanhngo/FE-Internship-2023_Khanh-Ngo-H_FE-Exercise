@@ -1,3 +1,3 @@
-export enum endpoints {
-  PRODUCTS = '/html-exercise/productList.json'
+export const endpoints = {
+  PRODUCTS: '/html-exercise/productList.json'
 }

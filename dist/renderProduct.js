@@ -1,5 +1,6 @@
-import productList from './api/apiHandle.js';
+import getProductList from './api/apiHandle.js';
 import { addCartItem } from './cart.js';
+const productList = await getProductList();
 const productItem = () => {
     return (`<ul class="product-list row">
     ${productList.map(product => `<li class="product-item col col-3 col-sm-6">

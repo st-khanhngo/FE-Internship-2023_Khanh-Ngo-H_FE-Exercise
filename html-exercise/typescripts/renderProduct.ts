@@ -1,5 +1,7 @@
-import productList from './api/apiHandle.js';
+import getProductList from './api/apiHandle.js';
 import { addCartItem } from './cart.js';
+
+const productList = await getProductList();
 
 const productItem = () => {
   return (

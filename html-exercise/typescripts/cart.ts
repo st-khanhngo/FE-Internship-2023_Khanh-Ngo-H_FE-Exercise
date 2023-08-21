@@ -1,14 +1,15 @@
-import productList from "./api/apiHandle.js";
-import Cart from "./cart/cart.entity.js";
-import CartItem from "./cart/cartItem.entity.js";
+import getProductList from "./api/apiHandle.js";
+import Cart from "./cart/carts.entity.js";
+import CartItem from "./cart/cart.entity.js";
 import Product from "./product/product.entity.js";
 import { loadCart } from "./renderCart.js";
 import { StorageKey, getLocalStorage, saveToLocalStorage } from "./services/localStorage.service.js";
 
-const cartStorage : CartItem[] = getLocalStorage(StorageKey.CART);
+const cartStorage : CartItem[] = getLocalStorage(StorageKey.CART) || [];
 
 // Change cart item quantity
-const changeCartQuantity = (btnClick: HTMLElement, quantity: number) => {  
+const changeCartQuantity = async (btnClick: HTMLElement, quantity: number) => {  
+  const productList = await getProductList();
   const productIndex : number = parseInt(btnClick?.getAttribute('data-index'));
   const product : Product = productList.find((prod) => prod.id === productIndex);
   const cartItem : CartItem = cartStorage.find((item) => item?.id === productIndex);    
@@ -22,9 +23,10 @@ const changeCartQuantity = (btnClick: HTMLElement, quantity: number) => {
 }
 
 // Add a product to cart
-const addCartItem = (btnClick : HTMLElement) => {
+const addCartItem = async (btnClick : HTMLElement) => {
+  const productList = await getProductList();
   const productIndex : number = parseInt(btnClick?.getAttribute('data-index'));
-  const product : Product = productList.find((prod) => prod.id === productIndex);
+  const product : Product = productList.find(prod => prod.id === productIndex);    
   const cartItem : CartItem = cartStorage.find((item) => item?.id === productIndex);    
   if (cartItem) {
     changeCartQuantity(btnClick, cartItem.quantity + 1);

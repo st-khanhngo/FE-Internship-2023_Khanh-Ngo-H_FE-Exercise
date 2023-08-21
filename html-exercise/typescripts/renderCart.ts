@@ -1,21 +1,20 @@
 import { addCartItem, changeCartQuantity, deleteCartItem } from "./cart.js";
+import Carts from "./cart/carts.entity.js";
 import Cart from "./cart/cart.entity.js";
-import CartItem from "./cart/cartItem.entity.js";
-import CartItemProps from "./cart/cartItem.interface.js";
 import { StorageKey, getLocalStorage } from "./services/localStorage.service.js";
 
-const getCartStorage = () => {
-  const cartStorage : CartItemProps[] = getLocalStorage(StorageKey.CART);
-  return cartStorage;
+const getCartStorage = () : [] => {
+  return getLocalStorage(StorageKey.CART) || [];
 }
 
 const cartList = () : string => {
   if (getCartStorage()?.length) {
-    const cart = new Cart(getCartStorage().map((cart) => new CartItem(cart)));
-    const cartList = cart.cartList;
+    const carts = new Carts(getCartStorage());
+    const cart = carts.cart;
+    
     return `
     <ul class="cart-list">
-    ${cartList.map((item) => `
+    ${cart.map((item) => `
       <li class="cart-item">
         <div class="cart row ${item.discount ? "product-discount" : ""}">
           <a class="cart-info col col-4" href="">
@@ -39,7 +38,7 @@ const cartList = () : string => {
       </li>
     `).join('')}
     </ul>
-    <p class="cart-total">TOTAL CART PRICE: $${cart.cartTotalPrice()}</p>
+    <p class="cart-total">TOTAL CART PRICE: $${carts.cartTotalPrice()}</p>
     `
   }
 }

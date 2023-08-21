@@ -1,10 +1,11 @@
-import productList from "./api/apiHandle.js";
-import CartItem from "./cart/cartItem.entity.js";
+import getProductList from "./api/apiHandle.js";
+import CartItem from "./cart/cart.entity.js";
 import { loadCart } from "./renderCart.js";
 import { StorageKey, getLocalStorage, saveToLocalStorage } from "./services/localStorage.service.js";
-const cartStorage = getLocalStorage(StorageKey.CART);
+const cartStorage = getLocalStorage(StorageKey.CART) || [];
 // Change cart item quantity
-const changeCartQuantity = (btnClick, quantity) => {
+const changeCartQuantity = async (btnClick, quantity) => {
+    const productList = await getProductList();
     const productIndex = parseInt(btnClick === null || btnClick === void 0 ? void 0 : btnClick.getAttribute('data-index'));
     const product = productList.find((prod) => prod.id === productIndex);
     const cartItem = cartStorage.find((item) => (item === null || item === void 0 ? void 0 : item.id) === productIndex);
@@ -18,9 +19,10 @@ const changeCartQuantity = (btnClick, quantity) => {
     setCart();
 };
 // Add a product to cart
-const addCartItem = (btnClick) => {
+const addCartItem = async (btnClick) => {
+    const productList = await getProductList();
     const productIndex = parseInt(btnClick === null || btnClick === void 0 ? void 0 : btnClick.getAttribute('data-index'));
-    const product = productList.find((prod) => prod.id === productIndex);
+    const product = productList.find(prod => prod.id === productIndex);
     const cartItem = cartStorage.find((item) => (item === null || item === void 0 ? void 0 : item.id) === productIndex);
     if (cartItem) {
         changeCartQuantity(btnClick, cartItem.quantity + 1);

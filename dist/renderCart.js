@@ -1,19 +1,17 @@
 import { changeCartQuantity, deleteCartItem } from "./cart.js";
-import Cart from "./cart/cart.entity.js";
-import CartItem from "./cart/cartItem.entity.js";
+import Carts from "./cart/carts.entity.js";
 import { StorageKey, getLocalStorage } from "./services/localStorage.service.js";
 const getCartStorage = () => {
-    const cartStorage = getLocalStorage(StorageKey.CART);
-    return cartStorage;
+    return getLocalStorage(StorageKey.CART) || [];
 };
 const cartList = () => {
     var _a;
     if ((_a = getCartStorage()) === null || _a === void 0 ? void 0 : _a.length) {
-        const cart = new Cart(getCartStorage().map((cart) => new CartItem(cart)));
-        const cartList = cart.cartList;
+        const carts = new Carts(getCartStorage());
+        const cart = carts.cart;
         return `
     <ul class="cart-list">
-    ${cartList.map((item) => `
+    ${cart.map((item) => `
       <li class="cart-item">
         <div class="cart row ${item.discount ? "product-discount" : ""}">
           <a class="cart-info col col-4" href="">
@@ -37,7 +35,7 @@ const cartList = () => {
       </li>
     `).join('')}
     </ul>
-    <p class="cart-total">TOTAL CART PRICE: $${cart.cartTotalPrice()}</p>
+    <p class="cart-total">TOTAL CART PRICE: $${carts.cartTotalPrice()}</p>
     `;
     }
 };
