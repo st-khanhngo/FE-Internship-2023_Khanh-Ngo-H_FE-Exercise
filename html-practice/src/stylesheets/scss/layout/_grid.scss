@@ -1,5 +1,12 @@
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    width: percentage(calc($i/12));
-  }
+.container {
+	width: map-get($map: $width, $key: container);
+	margin: 0 auto;
+}
+
+.d-flex {
+	display: flex;
+
+	&.align-center {
+		align-items: center;
+	}
 }
