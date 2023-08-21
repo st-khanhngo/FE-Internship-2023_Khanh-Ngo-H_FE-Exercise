@@ -1,8 +1,8 @@
-import { ProductProps } from "../product/product.interface";
+import { ProductProps } from '../product/product.interface';
 
 interface CartProps extends Omit<ProductProps, 'status'> {
   quantity: number;
-  calSubItem?: () => number
+  calSubItem?: () => number;
 }
 
 class Cart implements CartProps {

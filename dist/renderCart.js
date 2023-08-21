@@ -1,15 +1,15 @@
-import { changeCartQuantity, deleteCartItem } from "./cart.js";
-import Carts from "./cart/carts.entity.js";
-import { StorageKey, getLocalStorage } from "./services/localStorage.service.js";
+import { changeCartQuantity, deleteCartItem } from './cart.js';
+import Carts from './cart/carts.entity.js';
+import { StorageKey, getLocalStorage } from './services/localStorage.service.js';
 const getCartStorage = () => {
-  return getLocalStorage(StorageKey.CART) || [];
+    return getLocalStorage(StorageKey.CART) || [];
 };
 const cartList = () => {
-  var _a;
-  if ((_a = getCartStorage()) === null || _a === void 0 ? void 0 : _a.length) {
-    const carts = new Carts(getCartStorage());
-    const cart = carts.cart;
-    return `
+    var _a;
+    if ((_a = getCartStorage()) === null || _a === void 0 ? void 0 : _a.length) {
+        const carts = new Carts(getCartStorage());
+        const cart = carts.cart;
+        return `
     <ul class="cart-list">
     ${cart.map((item) => `
       <li class="cart-item">
@@ -37,23 +37,22 @@ const cartList = () => {
     </ul>
     <p class="cart-total">TOTAL CART PRICE: $${carts.cartTotalPrice()}</p>
     `;
-  }
+    }
 };
 export const loadCart = () => {
-  const cartWrapper = document.querySelector('.section-cart .container');
-  if (cartWrapper && getCartStorage().length) {
-    cartWrapper.innerHTML = cartList();
-  }
-  else if (cartWrapper) {
-    cartWrapper.innerHTML = `
+    const cartWrapper = document.querySelector('.section-cart .container');
+    if (cartWrapper && getCartStorage().length) {
+        cartWrapper.innerHTML = cartList();
+    }
+    else if (cartWrapper) {
+        cartWrapper.innerHTML = `
     <div class="section section-cart cart-empty">
       <h3 class="section-header">CART IS EMPTY</h3>
       <a class="btn btn-primary">Continue Shopping</a>
-    </div>
-    `;
-  }
-  const changeQuantities = document.querySelectorAll('.btn-change');
-  changeQuantities.forEach((item) => item.addEventListener('click', () => changeCartQuantity(item, parseInt(item.dataset.id))));
-  const deleteItem = document.querySelectorAll('.btn-delete');
-  deleteItem.forEach((item) => item.addEventListener('click', () => deleteCartItem(item)));
+    </div>`;
+    }
+    const changeQuantities = document.querySelectorAll('.btn-change');
+    changeQuantities.forEach((item) => item.addEventListener('click', () => changeCartQuantity(item, parseInt(item.dataset.id))));
+    const deleteItem = document.querySelectorAll('.btn-delete');
+    deleteItem.forEach((item) => item.addEventListener('click', () => deleteCartItem(item)));
 };

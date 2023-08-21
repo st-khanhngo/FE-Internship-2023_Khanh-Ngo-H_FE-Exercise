@@ -1,24 +1,21 @@
-import getProductList from "./api/apiHandle.js";
-import Cart from "./cart/carts.entity.js";
-import CartItem from "./cart/cart.entity.js";
-import Product from "./product/product.entity.js";
-import { loadCart } from "./renderCart.js";
-import { StorageKey, getLocalStorage, saveToLocalStorage } from "./services/localStorage.service.js";
+import getProductList from './api/apiHandle.js';
+import CartItem from './cart/cart.entity.js';
+import Product from './product/product.entity.js';
+import { loadCart } from './renderCart.js';
+import { StorageKey, getLocalStorage, saveToLocalStorage } from './services/localStorage.service.js';
 
 const cartStorage : CartItem[] = getLocalStorage(StorageKey.CART) || [];
 
 // Change cart item quantity
-const changeCartQuantity = async (btnClick: HTMLElement, quantity: number) => {  
-  const productList = await getProductList();
+const changeCartQuantity = (btnClick: HTMLElement, quantity: number) => {  
   const productIndex : number = parseInt(btnClick?.getAttribute('data-index'));
-  const product : Product = productList.find((prod) => prod.id === productIndex);
   const cartItem : CartItem = cartStorage.find((item) => item?.id === productIndex);    
   if (quantity > 0) {
     cartItem.quantity = quantity;
   } else {
     deleteCartItem(btnClick);
   }
-  saveToLocalStorage(StorageKey.CART, cartStorage)
+  saveToLocalStorage(StorageKey.CART, cartStorage);
   setCart();
 }
 
@@ -34,7 +31,7 @@ const addCartItem = async (btnClick : HTMLElement) => {
     const cart = new CartItem({...product, quantity: 1});
     cartStorage.push(cart);
   }
-  saveToLocalStorage(StorageKey.CART, cartStorage)
+  saveToLocalStorage(StorageKey.CART, cartStorage);
   setCart();
 }
 

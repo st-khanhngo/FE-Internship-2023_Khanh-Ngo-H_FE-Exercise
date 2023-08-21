@@ -1,7 +1,6 @@
-import { addCartItem, changeCartQuantity, deleteCartItem } from "./cart.js";
-import Carts from "./cart/carts.entity.js";
-import Cart from "./cart/cart.entity.js";
-import { StorageKey, getLocalStorage } from "./services/localStorage.service.js";
+import { changeCartQuantity, deleteCartItem } from './cart.js';
+import Carts from './cart/carts.entity.js';
+import { StorageKey, getLocalStorage } from './services/localStorage.service.js';
 
 const getCartStorage = () : [] => {
   return getLocalStorage(StorageKey.CART) || [];
@@ -11,7 +10,6 @@ const cartList = () : string => {
   if (getCartStorage()?.length) {
     const carts = new Carts(getCartStorage());
     const cart = carts.cart;
-    
     return `
     <ul class="cart-list">
     ${cart.map((item) => `
@@ -52,13 +50,12 @@ export const loadCart = () => {
     <div class="section section-cart cart-empty">
       <h3 class="section-header">CART IS EMPTY</h3>
       <a class="btn btn-primary">Continue Shopping</a>
-    </div>
-    `
+    </div>`;
   }
 
   const changeQuantities : NodeListOf<HTMLElement> = document.querySelectorAll('.btn-change');
-  changeQuantities.forEach((item) => item.addEventListener('click', () => changeCartQuantity(item, parseInt(item.dataset.id))))
+  changeQuantities.forEach((item) => item.addEventListener('click', () => changeCartQuantity(item, parseInt(item.dataset.id))));
 
   const deleteItem : NodeListOf<HTMLElement> = document.querySelectorAll('.btn-delete');
-  deleteItem.forEach((item) => item.addEventListener('click', () => deleteCartItem(item)))
+  deleteItem.forEach((item) => item.addEventListener('click', () => deleteCartItem(item)));
 }
