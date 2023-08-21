@@ -1,0 +1,75 @@
+.home-page {
+	padding-top: 75px;
+
+	.section-banner {
+		padding: 18px 0;
+		border-bottom: 1px solid map-get($map: $color, $key: bg-primary);
+
+		.banner-wrapper {
+			justify-content: space-between;
+		}
+
+		.banner-content {
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+		.section-title {
+			font-size: 85px;
+			font-weight: 600;
+		}
+
+		.section-desc {
+			font-size: 24px;
+			width: 655px;
+		}
+	}
+
+	.section-main {
+		padding: 40px 0 50px;
+
+		.main-wrapper {
+			justify-content: space-between;
+		}
+	}
+
+	.section-post {
+		max-width: 750px;
+	}
+	.post-list {
+		margin: -10px 0;
+		.post-item {
+			margin: 10px 0;
+			padding: 24px 20px;
+		}
+	}
+
+	.aside {
+		max-width: 360px;
+
+		&-title {
+			font-weight: 600;
+			margin-bottom: 16px;
+		}
+		.topic-list {
+			flex-wrap: wrap;
+			font-size: 12px;
+			margin: -8px -4px 0;
+			padding-bottom: 24px;
+			border-bottom: 1px solid map-get($map: $color, $key: border);
+		}
+
+		.topic-item {
+			margin: 8px 4px;
+		}
+
+		&-social {
+			padding: 24px 0;
+			margin: 0 -4px;
+		}
+
+		.social-item {
+			display: inline-block;
+			margin: 4px;
+		}
+	}
+}
