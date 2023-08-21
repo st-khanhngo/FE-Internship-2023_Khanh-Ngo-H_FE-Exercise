@@ -1,19 +1,33 @@
-import CartItem from "./cartItem.entity";
+import { ProductProps } from "../product/product.interface";
 
-class Cart {
-  cartList : CartItem[];
+interface CartProps extends Omit<ProductProps, 'status'> {
+  quantity: number;
+  calSubItem?: () => number
+}
 
-  constructor(cartList: CartItem[]) {
-    this.cartList = cartList;
+class Cart implements CartProps {
+  quantity: number;
+  id: number;
+  name: string;
+  imageUrl: string;
+  price: number;
+  discount?: number = 0;
+  finalPrice: number;
+
+  constructor(cartItem: CartProps) {
+    const { id, name, imageUrl, price, discount, quantity } = cartItem;
+    this.id = id;
+    this.name = name;
+    this.imageUrl = imageUrl;
+    this.quantity = quantity;
+    this.price = price;
+    this.discount = discount || 0 ;
+    this.finalPrice = discount ? (price - ((price * discount) / 100)) : price;
   }
 
-  cartTotalPrice = () => {
-    return this.cartList.reduce((total, item) => total + item.finalPrice * item.quantity, 0).toFixed(2);
-  }
-
-  cartTotalItem = () => {
-    return this.cartList.reduce((total, item) => total + item.quantity, 0);
+  itemTotalPrice = (price:number, quantity:number) => {
+    return parseFloat((price * quantity).toFixed(2));
   }
 }
 
-export default Cart
+export default Cart;

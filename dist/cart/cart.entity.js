@@ -1,12 +1,17 @@
 class Cart {
-    constructor(cartList) {
-        this.cartTotalPrice = () => {
-            return this.cartList.reduce((total, item) => total + item.finalPrice * item.quantity, 0).toFixed(2);
+    constructor(cartItem) {
+        this.discount = 0;
+        this.itemTotalPrice = (price, quantity) => {
+            return parseFloat((price * quantity).toFixed(2));
         };
-        this.cartTotalItem = () => {
-            return this.cartList.reduce((total, item) => total + item.quantity, 0);
-        };
-        this.cartList = cartList;
+        const { id, name, imageUrl, price, discount, quantity } = cartItem;
+        this.id = id;
+        this.name = name;
+        this.imageUrl = imageUrl;
+        this.quantity = quantity;
+        this.price = price;
+        this.discount = discount || 0;
+        this.finalPrice = discount ? (price - ((price * discount) / 100)) : price;
     }
 }
 export default Cart;
