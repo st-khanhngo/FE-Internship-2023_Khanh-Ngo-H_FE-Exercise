@@ -77,6 +77,10 @@ a {
   border-radius: 50px;
 }
 .btn-primary {
+  background-color: #ffc017;
+  color: #fff;
+}
+.btn-secondary {
   background-color: #333;
   color: #fff;
 }
@@ -177,6 +181,11 @@ a {
   margin: 0 auto;
 }
 
+.detail-container {
+  width: calc(100vw - 700px);
+  margin: 0 auto;
+}
+
 .d-flex {
   display: flex;
 }
@@ -270,6 +279,10 @@ a {
   background-color: #ffc017;
 }
 
+.bg-light {
+  background-color: #fff;
+}
+
 .text-secondary {
   color: #485963;
 }
@@ -311,6 +324,11 @@ a {
 .home-page .post-list .post-item {
   margin: 10px 0;
   padding: 24px 20px;
+}
+.home-page .post-list .post-item:hover {
+  border-radius: 7px;
+  background: #fff;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
 }
 .home-page .aside {
   max-width: 360px;

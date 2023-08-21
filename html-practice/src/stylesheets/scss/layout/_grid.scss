@@ -3,6 +3,11 @@
 	margin: 0 auto;
 }
 
+.detail-container {
+	width: map-get($map: $width, $key: detail-container);
+	margin: 0 auto;
+}
+
 .d-flex {
 	display: flex;
 

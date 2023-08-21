@@ -3,6 +3,7 @@
 	width: 100%;
 	border-bottom: 1px solid map-get($map: $color, $key: bg-primary);
 	z-index: 999;
+
 	.header-wrapper {
 		justify-content: space-between;
 		padding: 16px 0;
