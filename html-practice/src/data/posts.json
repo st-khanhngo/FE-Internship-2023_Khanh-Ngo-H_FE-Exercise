@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "userAvatar": "/html-practice/src/assets/images/avatar.png",
+    "userName": "Trang Nguyen T",
+    "date": "August 15, 2019",
+    "title": "WFH: A Comprehensive Guide to Working Remotely from Home",
+    "content": "First of all: What Does WFH Mean in 2021? It still means Working from Home. The term WFH caught on after many organizations worldwide were force ...",
+    "image": "/html-practice/src/assets/images/post.png",
+    "likes": 12,
+    "comments": 12,
+    "topic": ["React", "React", "React"]
+  },
+  {
+    "id": 2,
+    "userAvatar": "/html-practice/src/assets/images/avatar.png",
+    "userName": "Giang Tran N. T.",
+    "date": "August 15, 2019",
+    "title": "WFH: A Comprehensive Guide to Working Remotely from Home",
+    "content": "First of all: What Does WFH Mean in 2021? It still means Working from Home. The term WFH caught on after many organizations worldwide were force ...",
+    "image": "/html-practice/src/assets/images/post.png",
+    "likes": 12,
+    "comments": 12,
+    "topic": ["React", "React", "React"]
+  },
+  {
+    "id": 3,
+    "userAvatar": "/html-practice/src/assets/images/avatar.png",
+    "userName": "Trang Nguyen T",
+    "date": "August 15, 2019",
+    "title": "WFH: A Comprehensive Guide to Working Remotely from Home",
+    "content": "First of all: What Does WFH Mean in 2021? It still means Working from Home. The term WFH caught on after many organizations worldwide were force ...",
+    "image": "/html-practice/src/assets/images/post.png",
+    "likes": 12,
+    "comments": 12,
+    "topic": ["React", "React", "React"]
+  }
+]
