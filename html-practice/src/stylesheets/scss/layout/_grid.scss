@@ -10,3 +10,24 @@
 		align-items: center;
 	}
 }
+
+.d-none {
+	display: none;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+
+	.col {
+		padding: 0 15px;
+	}
+}
+
+@for $i from 1 through 12 {
+	.col-#{$i} {
+		width: percentage(calc($i/12));
+	}
+}

@@ -1,5 +1,5 @@
 $width: (
-	container: 1220px,
+	container: calc(100vw - 220px),
 );
 
 $color: (
@@ -9,4 +9,5 @@ $color: (
 	dark: #000,
 	bg-primary: #333,
 	bg-secondary: #f2f2f2,
+	border: #e6e6e6,
 );
