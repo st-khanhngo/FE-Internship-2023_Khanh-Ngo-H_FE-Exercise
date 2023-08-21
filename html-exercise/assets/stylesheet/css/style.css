@@ -215,6 +215,9 @@ a {
   padding: 1px 4px;
   font-size: 8px;
 }
+.header-cart {
+  background-color: #000;
+}
 
 @media only screen and (max-width: 768px) {
   .header {
@@ -563,6 +566,57 @@ a {
     padding: 7px 18px;
   }
 }
+.cart-page .section-cart {
+  padding-top: 150px;
+}
+.cart-page .section-cart .cart-list {
+  margin-bottom: 12px;
+}
+.cart-page .cart {
+  padding: 20px 0;
+  border-bottom: 1px solid #c4c4c4;
+}
+.cart-page .cart-img {
+  width: 40%;
+}
+.cart-page .cart.product-discount .badge-danger {
+  top: 5%;
+  left: 5%;
+}
+.cart-page .cart.product-discount .price-wrapper .product-price {
+  color: #cecece;
+  text-decoration: line-through;
+}
+.cart-page .cart-action {
+  text-align: center;
+  margin: auto 0;
+}
+.cart-page .cart-price {
+  position: relative;
+  margin: auto 0;
+  text-align: end;
+}
+.cart-page .cart .btn {
+  padding: 4px 12px;
+  margin: 0 10px;
+  border: 1px solid #fbb03b;
+}
+.cart-page .cart .btn:hover {
+  background-color: #fbb03b;
+  color: #fff;
+}
+.cart-page .cart-total {
+  text-align: end;
+  font-weight: 700;
+  font-size: 20px;
+}
+.cart-page .cart-empty {
+  text-align: center;
+}
+.cart-page .cart-empty .btn:hover {
+  color: #fff;
+}
+
 .section {
   margin: 0;
 }
@@ -591,6 +645,9 @@ a {
   border-radius: 24px;
   font-size: 13px;
   font-weight: 700;
+}
+.btn:hover {
+  cursor: pointer;
 }
 .btn.btn-primary {
   padding: 16px 42px;
@@ -739,11 +796,18 @@ a {
   color: #fff;
   cursor: pointer;
 }
-.product:hover .product-link {
+.product.available:hover .product-link {
   opacity: 0.5;
 }
-.product:hover .btn {
+.product.available:hover .btn {
   display: block;
+}
+.product.unavailable .product-link {
+  filter: contrast(25%);
+}
+.product.unavailable .btn {
+  cursor: default !important;
+  background-color: #ff0000;
 }
 
 @media only screen and (max-width: 768px) {
@@ -753,21 +817,6 @@ a {
   .product-price, .product-price-discount {
     font-size: 10px;
   }
-}
-.cart {
-  padding: 20px 0;
-  border-bottom: 1px solid #c4c4c4;
-}
-.cart-img {
-  width: 40%;
-}
-.cart.product-discount .badge-danger {
-  top: 5%;
-  left: 5%;
-}
-.cart.product-discount .price-wrapper .product-price {
-  color: #cecece;
-  text-decoration: line-through;
 }
 .badge-danger {
   position: absolute;

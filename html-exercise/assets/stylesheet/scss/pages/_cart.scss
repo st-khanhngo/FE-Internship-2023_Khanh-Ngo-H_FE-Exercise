@@ -1,0 +1,65 @@
+.cart-page {
+	.section-cart {
+		padding-top: 150px;
+
+		.cart-list {
+			margin-bottom: 12px;
+		}
+	}
+
+	.cart {
+		padding: 20px 0;
+		border-bottom: 1px solid map-get($map: $color, $key: border);
+		&-img {
+			width: 40%;
+		}
+
+		&.product-discount {
+			.badge-danger {
+				top: 5%;
+				left: 5%;
+			}
+
+			.price-wrapper .product-price {
+				color: map-get($color, price);
+				text-decoration: line-through;
+			}
+		}
+
+		&-action {
+			text-align: center;
+			margin: auto 0;
+		}
+
+		&-price {
+			position: relative;
+			margin: auto 0;
+			text-align: end;
+		}
+
+		.btn {
+			padding: 4px 12px;
+			margin: 0 10px;
+			border: 1px solid map-get($map: $color, $key: primary);
+
+			&:hover {
+				background-color: map-get($map: $color, $key: primary);
+				color: map-get($map: $color, $key: light);
+			}
+		}
+
+		&-total {
+			text-align: end;
+			font-weight: 700;
+			font-size: 20px;
+		}
+
+		&-empty {
+			text-align: center;
+
+			.btn:hover {
+				color: map-get($map: $color, $key: light);
+			}
+		}
+	}
+}

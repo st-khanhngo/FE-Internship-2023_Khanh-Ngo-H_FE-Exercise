@@ -1,76 +1,86 @@
 .product {
-  position: relative;
+	position: relative;
 
-  &-link {
-    // cursor: pointer;
-    position: relative;
-  }
-  &-title {
-    margin-top: 8px;
-    font-weight: 300;
-  }
+	&-link {
+		position: relative;
+	}
+	&-title {
+		margin-top: 8px;
+		font-weight: 300;
+	}
 
-  &.product-discount {
-    .badge-danger {
-      top: 5%;
-      left: 5%;
-    }
+	&.product-discount {
+		.badge-danger {
+			top: 5%;
+			left: 5%;
+		}
 
-    .product-price {
-      color: map-get($color, price);
-      text-decoration: line-through;
-    }
-  }
+		.product-price {
+			color: map-get($color, price);
+			text-decoration: line-through;
+		}
+	}
 
-  .price-wrapper {
-    justify-content: space-between;
-  }
-  &-price {
-    font-size: 20px;
-    &::before {
-      content: "$";
-    }
-  }
+	.price-wrapper {
+		justify-content: space-between;
+	}
+	&-price {
+		font-size: 20px;
+		&::before {
+			content: '$';
+		}
+	}
 
-  &-price-discount {
-    color: map-get($color, price-discount);
-    font-size: 20px;
-    &::before {
-      content: "$";
-    }
-  }
+	&-price-discount {
+		color: map-get($color, price-discount);
+		font-size: 20px;
+		&::before {
+			content: '$';
+		}
+	}
 
-  .btn-primary {
-    display: none;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 12px 20px;
+	.btn-primary {
+		display: none;
+		position: absolute;
+		z-index: 1;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		padding: 12px 20px;
 
-    color: map-get($map: $color, $key: light);
-    cursor: pointer;
-  }
-  &:hover {
-    .product-link {
-      opacity: 0.5;
-    }
-    .btn {
-      display: block;
-    }
-  }
+		color: map-get($map: $color, $key: light);
+		cursor: pointer;
+	}
+	&.available:hover {
+		.product-link {
+			opacity: 0.5;
+		}
+		.btn {
+			display: block;
+		}
+	}
+
+	&.unavailable {
+		.product-link {
+			filter: contrast(25%);
+		}
+
+		.btn {
+			cursor: default !important;
+			background-color: map-get($color, price-discount);
+		}
+	}
 }
 
 @media only screen and (max-width: 768px) {
-  .product {
-    &-title {
-      font-size: 12px;
-    }
+	.product {
+		&-title {
+			font-size: 12px;
+		}
 
-    &-price,
-    &-price-discount {
-      font-size: 10px;
-    }
-  }
+		&-price,
+		&-price-discount {
+			font-size: 10px;
+		}
+	}
 }

@@ -1,41 +1,45 @@
 .header {
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  padding: 42px 0;
-  z-index: 1;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	padding: 42px 0;
+	z-index: 1;
 
-  .container {
-    justify-content: space-between;
-    align-items: center;
-  }
+	.container {
+		justify-content: space-between;
+		align-items: center;
+	}
 
-  .action-list {
-    justify-content: space-around;
-    align-items: center;
+	.action-list {
+		justify-content: space-around;
+		align-items: center;
 
-    .action-item {
-      padding-left: 12px;
-      position: relative;
-    }
+		.action-item {
+			padding-left: 12px;
+			position: relative;
+		}
 
-    .badge-cart {
-      display: none;
-      position: absolute;
-      top: -10px;
-      left: 5px;
-      padding: 1px 4px;
+		.badge-cart {
+			display: none;
+			position: absolute;
+			top: -10px;
+			left: 5px;
+			padding: 1px 4px;
 
-      font-size: 8px;
-    }
-  }
+			font-size: 8px;
+		}
+	}
+
+	&-cart {
+		background-color: map-get($map: $color, $key: dark);
+	}
 }
 
 @media only screen and (max-width: 768px) {
-  .header {
-    position: fixed;
-    padding: 20px 0;
-    background-color: map-get($color, light);
-  }
+	.header {
+		position: fixed;
+		padding: 20px 0;
+		background-color: map-get($color, light);
+	}
 }
