@@ -1,0 +1,42 @@
+.icon {
+	width: 24px;
+	height: 24px;
+	display: inline-block;
+	background: no-repeat center;
+	vertical-align: middle;
+
+	&-option {
+		width: 15px;
+		height: 3px;
+		vertical-align: middle;
+		background: url('/html-practice/src/assets/images/ic-option.svg');
+	}
+
+	&-like {
+		width: 13px;
+		height: 15px;
+		background: url('/html-practice/src/assets/images/ic-like.svg');
+	}
+
+	&-cmt {
+		width: 13px;
+		height: 15px;
+		background: url('/html-practice/src/assets/images/ic-cmt.svg');
+	}
+
+	&-facebook {
+		background: url('/html-practice/src/assets/images/ic-facebook.svg');
+	}
+
+	&-instagram {
+		background: url('/html-practice/src/assets/images/ic-instagram.svg');
+	}
+
+	&-youtube {
+		background: url('/html-practice/src/assets/images/ic-youtube.svg');
+	}
+
+	&-twitter {
+		background: url('/html-practice/src/assets/images/ic-twitter.svg');
+	}
+}
